@@ -1,0 +1,29 @@
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;700&family=Lisu+Bosa:ital,wght@0,400;0,700;1,200&display=swap');
+  
+  :root {
+    --backgroundwhite: white;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'Lisu Bosa', serif; */
+    padding: 0;/* 
+    background-color: hsl(0, 0%, 70%); */
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items:start;
+    height: 100vh;
+  }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */

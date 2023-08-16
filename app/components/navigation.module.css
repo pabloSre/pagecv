@@ -1,0 +1,185 @@
+/* navBar general */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  padding-left: 1.5em;
+}
+/* NavbarLeft */
+.navbarLeft {/* hay un pequeño españo pór revolver en el header */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width:200px;
+  position: relative;
+  height: 65px;
+}
+.menuIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 20px;
+  min-height: 20px;
+  width: 20px;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 2px;
+}
+.blue {
+  border: 2px solid#3366cc;
+}
+.logo {
+  display:flex;/* hacer que desaparezca cuando se pone mobile  */
+  width: 50px;
+  height: 45px;
+  padding-right: 10px;
+}
+.logo2 {
+  width: 120px;
+  height: 18px;
+}
+.logo3 {
+  width: 100%;
+  height: 17px;
+}
+.textWiki {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.containerIcon{
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  width: fit-content;/* no hace nada */
+  height:fit-content;
+  
+}
+/* navbar del menú */
+.menuNav {
+  display: flex;
+  width:150px;
+  height: 100%;
+  margin-top: 78px;
+  margin-left: 120px;/* resolver problema cuando se corre. */
+  position: absolute;
+}
+.navbar {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 1px solid gray;
+  background-color: white;
+  color: white;
+  height: 220px;
+  width: 150px;
+  padding-left: 0;
+  
+}
+.navbar1 {
+  display: flex;
+  align-items: flex-start;
+  width: 90%;
+  margin: 10px 5px 10px 10px;
+}
+.textnav {
+  list-style: none;
+  text-decoration: none;/* hacer mas gruesa */
+  color: #3366cc;
+
+}
+/* navbar Rigth */
+.navbarRigth {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  padding-right: 15px;
+  height: 65px;
+}
+.navbarRigthOpen {
+  width: 445px;
+  justify-content: space-between;
+}
+.cajaSearch {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 35px;
+  width: 240px;
+}
+.cajaSearchOpen {
+  justify-content: flex-start;
+}
+/* 
+.cajaSearch input[type='text'] {
+  padding-left: 20px;
+} */
+.search {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  border: 0;
+  width: 20px;
+  height: 20px;
+}
+.searchOpen{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 28px;
+  outline: none;
+  width: 240px;
+  height: 32px;
+  border-radius: 2px;
+  border: 2px solid #36c;
+}
+/* .searchOpen::placeholder {
+  padding-left: 25px;
+} */
+.searchOpen input[type="text"] {
+  padding-left: 25px;
+}
+.SearchIcon {
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  margin-left: 10px ;
+}
+.navUser1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 192px;
+  height: 65px;
+}
+.navUser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 138px;
+}
+.textUser {
+  display: flex;/* flex */
+  font-size: 0.7em;
+  padding: 2px;/* revisar que esta todo muy cerca */
+  color:#3366cc;
+}
+.options {
+  transform: rotate(90deg);
+  width: fit-content;
+}
