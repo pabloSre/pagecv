@@ -59,7 +59,7 @@ export default function HomePage() {
           alt="idiomas" />
         
         <p className={styles.cantidadIdiomas}>
-        128 idiomas 
+        Cambiar idioma
         </p>
 
         <IoIosArrowDown className={styles.arrow}/>
@@ -69,6 +69,7 @@ export default function HomePage() {
         {isInputIdiomasOpen && (
       <ul className={`${styles.listIdiomas} ${isInputIdiomasOpen ? styles.listIdiomaOpen : ''}`}>
         <li className={styles.idiomas2}>Ingles</li>
+        {/* 
         <li className={styles.idiomas2}>Españo</li>
         <li className={styles.idiomas2}>Portugues</li>
         <li className={styles.idiomas2}>Frances</li>
@@ -77,7 +78,7 @@ export default function HomePage() {
         <li className={styles.idiomas2}>Hindú</li>
         <li className={styles.idiomas2}>Bengalí</li>
         <li className={styles.idiomas2}>Japones</li>
-        <li className={styles.idiomas2}>Arabe</li>
+        <li className={styles.idiomas2}>Arabe</li> */}
       </ul>
       )}
       </section>
@@ -86,13 +87,13 @@ export default function HomePage() {
 
     <section className={styles.nav3}>
         <div className={styles.nav3Left}>
-        <p>Articulo</p>
-        <p>Discusion</p>
+        <p className={styles.articulo}>Articulo</p>
+        <p className={styles.discusion}>Discusion</p>
         </div>
         {/* AGREGAR articulo + discucsion + rigth herramientas */}
 
-        <div className={styles.naf3Rigth}>
-            <p className={styles.herrammientas}>Herramientas</p>
+        <div className={styles.nav3Rigth}>
+            <p className={styles.herramientas}>Herramientas</p>
         </div>
       </section>
 

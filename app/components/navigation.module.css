@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width:97vw;
   height: 65px;
   padding-left: 1.5em;
 }
@@ -13,7 +13,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width:200px;
+  width:220px;
   position: relative;
   height: 65px;
 }
@@ -40,7 +40,7 @@
   border: 2px solid#3366cc;
 }
 .logo {
-  display:flex;/* hacer que desaparezca cuando se pone mobile  */
+  display:none;/* hacer que desaparezca cuando se pone mobile  */
   width: 50px;
   height: 45px;
   padding-right: 10px;
@@ -57,6 +57,7 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
+  padding-right: 5px;
 }
 .containerIcon{
   display: flex;
@@ -72,7 +73,7 @@
   width:150px;
   height: 100%;
   margin-top: 78px;
-  margin-left: 120px;/* resolver problema cuando se corre. */
+  margin-left: 105px;/* resolver problema cuando se corre. */
   position: absolute;
 }
 .navbar {
@@ -105,7 +106,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 375px;
+  width:180px;
   padding-right: 15px;
   height: 65px;
 }
@@ -119,7 +120,7 @@
   justify-content: flex-end;
   align-items: center;
   height: 35px;
-  width: 240px;
+  width: 160px;/* 270 */
 }
 .cajaSearchOpen {
   justify-content: flex-start;
@@ -141,7 +142,7 @@
   justify-content: flex-start;
   padding-left: 28px;
   outline: none;
-  width: 240px;
+  width: 170px;
   height: 32px;
   border-radius: 2px;
   border: 2px solid #36c;
@@ -166,6 +167,9 @@
   width: 192px;
   height: 65px;
 }
+.navUser0{
+  display: none;
+}
 .navUser {
   display: flex;
   justify-content: space-between;
@@ -182,4 +186,24 @@
 .options {
   transform: rotate(90deg);
   width: fit-content;
+}
+
+/* responsive */
+@media(min-width: 450px) {
+  .logo{
+    display: flex;
+    
+  }
+}
+@media(min-width: 600px) {
+  .searchOpen {
+    width: 100%;
+  }
+
+.navbarRigth {
+  width:600px;
+  }
+  .cajaSearch {
+    width: 100%;
+  }
 }

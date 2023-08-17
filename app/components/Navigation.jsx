@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
 import { BsSearch } from 'react-icons/Bs';
 import { SlOptionsVertical } from 'react-icons/sl'
@@ -29,6 +29,21 @@ export function Navigation() {
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen)
   }
+  
+  //click fuera de area de search tendria que cerrarlo.
+  const handleOutsideClick = (event) => {
+    if (isSearchOpen && searchContainerRef.current && !searchContainerRef.current.contains(event.target)) {
+      setIsSearchOpen(false);
+    }
+  }
+  const searchContainerRef = useRef(null);
+  useEffect(() => {
+    document.addEventListener('click', handleOutsideClick);
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, [isSearchOpen]);
+
   
   return (
     <>
@@ -73,7 +88,7 @@ export function Navigation() {
 
     <section className={`${styles.navbarRigth} ${isSearchOpen ? styles.navbarRigthOpen : ''}`}>
     
-      <label className={`${styles.cajaSearch} ${isSearchOpen ? styles.cajaSearchOpen : ''}`}>
+      <label className={`${styles.cajaSearch} ${isSearchOpen ? styles.cajaSearchOpen : ''}`} ref={searchContainerRef}>
       {isSearchOpen && (
         <input
         className={`${styles.search} ${isSearchOpen ? styles.searchOpen : ''}`}
@@ -88,7 +103,7 @@ export function Navigation() {
         />
       </label>
 
-      <div className={styles.navUser1}>
+      <div className={`${styles.navUser1} ${isSearchOpen ? styles.navUser0 : ''}`}>
         <div className={styles.navUser}>
           <p className={styles.textUser}>Crear una cuenta</p>
           
