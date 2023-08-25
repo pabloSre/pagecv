@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
 import { BsSearch } from 'react-icons/Bs';
 import { SlOptionsVertical } from 'react-icons/sl'
+import { Logos } from './logos';
 import styles from './navigation.module.css';
 
 import Link from 'next/link';
@@ -73,16 +74,7 @@ export function Navigation() {
         )}
       </nav>
 
-      <div className={styles.containerIcon} >
-
-        <img src='/wiki.png' alt='mundowiki'  className={styles.logo}/>
-
-        <div className={styles.textWiki}>
-        <img src='/wikipedia.svg' alt='wiki' className={styles.logo2}/>
-        
-        <img src='/laenciclopedia.svg' alt='laenciclopedia' className={styles.logo3}/>
-        </div>
-      </div>
+      <Logos/>
       
     </section>
 

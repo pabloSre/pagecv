@@ -1,0 +1,11 @@
+.containerSwitch {
+  background-color: var(--background);
+}
+
+.switch {
+  color: var(--azul1) ;
+
+}
+.slider {
+  color:var(--azul1);
+}

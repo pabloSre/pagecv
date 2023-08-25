@@ -1,8 +1,29 @@
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;700&family=Lisu+Bosa:ital,wght@0,400;0,700;1,200&display=swap');
   
   :root {
-    --backgroundwhite: white;
+    --background: white;
+    --backgroundclaro:#75a0f7d8;
+    --color1:white;
+    --letras:#3366cc;
+    --letras2:black;
+    --azul1:#3366cc;
+    --azul2:#36c;
+    --bordeclaro:gray;
+    --bordeoscuro:#78a4fc37;
+    --borde:#3366cc;
   }
+  [data-theme='dark'] {
+    --background:#23272f;
+    --backgroundclaro:#75a0f7d8;
+    --color1:rgb(7, 7, 7);
+    --letras:#3366cc;
+    --letras2:rgb(190, 190, 190);
+    --azul1:#3366cc;
+    --azul2:#36c;
+    --bordeclaro:gray;
+    --bordeoscuro:#78a4fc37;
+    --borde:#3366cc;
+}
   * {
     box-sizing: border-box;
   }
@@ -18,6 +39,7 @@
     flex-direction: column;
     align-items:start;
     height: 100vh;
+    background-color: var(--background);
   }
 
 /* @media (prefers-color-scheme: dark) {

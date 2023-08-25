@@ -4,8 +4,10 @@ import { useState } from 'react';
 import styles from './homepage.module.css';
 import { TfiMenuAlt } from 'react-icons/tfi';
 import {IoIosArrowDown} from 'react-icons/Io'
+import { Switch } from '../components/Switch';
 
-export default function HomePage() {
+export function HomePage() {
+  /* EXPORT DEFAULT HACE QUE NO TENGAS QUE EXPORTARLO AL FINAL DEL PROYECTO */
     //abrir menu hamburguesa
     const [isMenu2Open, setIsMenu2Open] = useState(false)
     const toggleMenu2 = () => {
@@ -94,6 +96,7 @@ export default function HomePage() {
 
         <div className={styles.nav3Rigth}>
             <p className={styles.herramientas}>Herramientas</p>
+        <Switch/>
         </div>
       </section>
 
