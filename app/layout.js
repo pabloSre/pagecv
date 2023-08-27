@@ -1,8 +1,9 @@
+import React from 'react';
 import { Navigation } from './components/navigation'
 
 import '../styles/globals.css';
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, theme }) {
   return (/*  REVISAR REESTRUCTURACION COMPONENTES 
   Y ROOTLAYOUT */
     <html lang="en">
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
       <title>Wiki Pablo Re</title>
       </head>
       <body data-theme='dark' >
-        <Navigation/>
+        <Navigation theme={theme} />
         {/* generales componentes */}
         {children}
       </body>

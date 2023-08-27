@@ -13,100 +13,84 @@ const links = [{
   label: 'Inicio',
   route: '/'
 }, {
-  label: 'Proyects',
-  route: '/proyects'
+  label: 'Proyectos',
+  route: '/proyectos' // Corregí el nombre de la ruta si es necesario
 }]
 
-
-export function Navigation() {
-
+export function Navigation({ theme }) {
   //abrir menu hamburguesa
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   //abrir search
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
-  const toggleSearch = () => {
-    setIsSearchOpen(!isSearchOpen)
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   }
   
-  //click fuera de area de search tendria que cerrarlo.
-  const handleOutsideClick = (event) => {
-    if (isSearchOpen && searchContainerRef.current && !searchContainerRef.current.contains(event.target)) {
-      setIsSearchOpen(false);
-    }
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
   }
+  
   const searchContainerRef = useRef(null);
   useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (isSearchOpen && searchContainerRef.current && !searchContainerRef.current.contains(event.target)) {
+        setIsSearchOpen(false);
+      }
+    };
+
     document.addEventListener('click', handleOutsideClick);
     return () => {
       document.removeEventListener('click', handleOutsideClick);
     };
   }, [isSearchOpen]);
 
-  
+
   return (
-    <>
-  <header className={styles.Header}>
-    
-    <section className={styles.navbarLeft}>
+    <header className={styles.Header}>
+      <section className={styles.navbarLeft}>
+        <nav className={`${styles.menu} ${isMenuOpen ? styles.blue : ''}`}>
+          <TfiMenu className={styles.menuIcon} onClick={toggleMenu} />
+          {isMenuOpen && (
+            <section className={styles.menuNav}>
+              <ul className={styles.navbar}>
+                {links.map(({ label, route }) => (
+                  <li key={label} className={styles.navbar1}>
+                    <Link href={route} className={styles.textnav}>
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+                <li className={styles.navbar1}><a className={styles.textnav} href="/">Help</a></li>
+                <li className={styles.navbar1}><a className={styles.textnav} href="/">Contact</a></li>
+                <li className={styles.navbar1}><a className={styles.textnav} href="/">Notificar un error</a></li>
+              </ul>
+            </section>
+          )}
+        </nav>
 
-    <nav className={`${styles.menu} ${isMenuOpen ? styles.blue : ''}`}>{/* activar varias clases */}
-
-      <TfiMenu className={styles.menuIcon}  onClick={toggleMenu} />
-
-        {isMenuOpen && (
-          <section className={styles.menuNav}>
-        <ul className={styles.navbar}>{/* REVISAR KEY ERROR DE CONSOLA */}
-          {links.map(({ label, route }) => (
-            <li className={styles.navbar1}>
-              <Link href={route} className={styles.textnav}>
-                {label}
-              </Link>
-            </li>
-          ))}
-          <li className={styles.navbar1}><a className={styles.textnav} href="/">Help</a></li>
-          <li className={styles.navbar1}><a className={styles.textnav} href="/">Contact</a></li>
-          <li className={styles.navbar1}><a className={styles.textnav} href="/">Notificar un error</a></li>
-        </ul>
-        </section>
-        )}
-      </nav>
-
-      <Logos/>
-      
-    </section>
-
-    <section className={`${styles.navbarRigth} ${isSearchOpen ? styles.navbarRigthOpen : ''}`}>
-    
-      <label className={`${styles.cajaSearch} ${isSearchOpen ? styles.cajaSearchOpen : ''}`} ref={searchContainerRef}>
-      {isSearchOpen && (
-        <input
-        className={`${styles.search} ${isSearchOpen ? styles.searchOpen : ''}`}
-        placeholder='Buscar en wikipedia'
-        />
-        )}
-        
-      <BsSearch 
-        className={styles.SearchIcon}
-        onClick={toggleSearch}
-        
-        />
-      </label>
-
-      <div className={`${styles.navUser1} ${isSearchOpen ? styles.navUser0 : ''}`}>
-        <div className={styles.navUser}>
-          <p className={styles.textUser}>Crear una cuenta</p>
-          
-          <p className={styles.textUser}>Acceder</p>
-        </div>
-      <SlOptionsVertical className={styles.options}/>  
-      </div>
-
+        <Logos theme={theme} />
       </section>
-      </header>
-</>
 
-  )
+      <section className={`${styles.navbarRigth} ${isSearchOpen ? styles.navbarRigthOpen : ''}`}>
+        <label className={`${styles.cajaSearch} ${isSearchOpen ? styles.cajaSearchOpen : ''}`} ref={searchContainerRef}>
+          {isSearchOpen && (
+            <input
+              className={`${styles.search} ${isSearchOpen ? styles.searchOpen : ''}`}
+              placeholder='Buscar en wikipedia'
+            />
+          )}
+          <BsSearch className={styles.SearchIcon} onClick={toggleSearch} />
+        </label>
+
+        <div className={`${styles.navUser1} ${isSearchOpen ? styles.navUser0 : ''}`}>
+          <div className={styles.navUser}>
+            <p className={styles.textUser}>Crear una cuenta</p>
+            <p className={styles.textUser}>Acceder</p>
+          </div>
+          <SlOptionsVertical className={styles.options} />
+        </div>
+      </section>
+    </header>
+  );
 }

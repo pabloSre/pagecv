@@ -7,13 +7,19 @@ import {IoIosArrowDown} from 'react-icons/Io'
 import { Switch } from '../components/Switch';
 
 export function HomePage() {
+  const [theme, setTheme] = useState('light');
   /* EXPORT DEFAULT HACE QUE NO TENGAS QUE EXPORTARLO AL FINAL DEL PROYECTO */
     //abrir menu hamburguesa
-    const [isMenu2Open, setIsMenu2Open] = useState(false)
+    const [isMenu2Open, setIsMenu2Open] = useState(false);
     const toggleMenu2 = () => {
       setIsMenu2Open(!isMenu2Open)
     }
 
+    const handleThemeChange = (newTheme) => {
+      setTheme(newTheme);
+      
+      console.log('temahome', newTheme);
+    };
     const [isInputIdiomasOpen, setIsInputIdiomaOpen] = useState(false)
     const toggleInputIdioma = () => {
       setIsInputIdiomaOpen(!isInputIdiomasOpen)
@@ -70,18 +76,7 @@ export function HomePage() {
       
         {isInputIdiomasOpen && (
       <ul className={`${styles.listIdiomas} ${isInputIdiomasOpen ? styles.listIdiomaOpen : ''}`}>
-        <li className={styles.idiomas2}>Ingles</li>
-        {/* 
-        <li className={styles.idiomas2}>Españo</li>
-        <li className={styles.idiomas2}>Portugues</li>
-        <li className={styles.idiomas2}>Frances</li>
-        <li className={styles.idiomas2}>Chino</li>
-        <li className={styles.idiomas2}>Ruso</li>
-        <li className={styles.idiomas2}>Hindú</li>
-        <li className={styles.idiomas2}>Bengalí</li>
-        <li className={styles.idiomas2}>Japones</li>
-        <li className={styles.idiomas2}>Arabe</li> */}
-      </ul>
+        <li className={styles.idiomas2}>Ingles</li></ul>
       )}
       </section>
 
@@ -96,7 +91,7 @@ export function HomePage() {
 
         <div className={styles.nav3Rigth}>
             <p className={styles.herramientas}>Herramientas</p>
-        <Switch/>
+            <Switch onThemeChange={handleThemeChange} />
         </div>
       </section>
 
