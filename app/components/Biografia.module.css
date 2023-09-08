@@ -1,0 +1,285 @@
+/*INICIO BIO  */
+.biografia {
+  display: flex;
+  width: 434px;
+  height: 2000px;
+  flex-direction: column;
+  padding:20px 30px 90px 30px;
+  background-color:var(--background);
+  /* poner padding left y rigth en general
+  para poder central al medio todo. */
+}
+.inicio {
+  width: 393px;
+  height: 2000px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background);
+}
+.inicio1 {
+  color: var(--letras2);
+  width: 380px;
+  height: 788px;
+  font-size: 12px;
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--background);
+  line-height: 1.6;
+}
+.inicio3 {
+  font-size: 10px;
+}
+.inicio2 {
+  display:none;
+}
+@media (min-width:470px) {
+/* BIOGRAFIA */
+.biografia {
+  width: 470px;
+  }
+/* general */
+.inicio {
+  width: 430px;
+} 
+/* texto */
+.inicio1 {
+  width: 250px;
+}
+/* inicio 2 */
+.inicio2 {
+  display:flex;
+  width: 230px;
+  height: 400px;
+  border: 1px solid var(--bordeclaro);
+  background-color:var(--bordeclaro);
+  justify-content: center;
+  align-items:stretch ;/* donde empieza el borde. */
+}
+.rectangulo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 380px;
+  gap: 3px;
+  background-color: var(--bordeclaro);
+}
+.rec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  background-color: var(--backgroundTitulo);
+  padding: 2px 9px 2px 9px;
+  width: 196px;
+  height: 27px;
+}
+.titleRec {
+  font-size: 18px;
+  font-family: 'Lisu Bosa', serif;
+  color: var(--background);/* letrablanca */
+}
+.imagen1 {
+  display: flex;
+  width: 125px;
+  height: 183px;
+  object-fit: cover;
+}
+.info {
+  width: 97%;
+  height: 150px;
+  background-color:var(--bordeclaro);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 8px;
+}
+.infoPersonal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 27px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: var(--backgroundTitulo);
+}
+.fila1 {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  margin-top: 3px; 
+  padding: 0;
+}
+.subTitle {
+  height: 15px;
+  width: 79px;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 5px;
+  font-size: 11px;
+  margin: 0;
+  list-style: none;
+}
+.subTitle2 {
+  height: 15px;
+  list-style: none;
+  width: 115px;
+  text-decoration: none;
+  padding-left: 9px;
+  font-size: 11px;
+  margin: 0;
+  list-style: none;
+}
+.fila2 {
+  margin: 0;
+  margin-top: 3px; 
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  width:110px ;
+}
+.personal {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 9px;
+  line-height: 1.4;
+  margin: 0;
+  background-color: var(--bordeclaro);
+}
+.infoEducacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0;
+  width:100%;
+  height: 27px;
+  background-color: var(--backgroundTitulo);
+}
+.educacion {
+  display: flex;
+  width: 100%;
+  height: 47px;
+  font-size: 9px;
+  line-height: 1.4;
+  margin: 0;
+  background-color:var(--bordeclaro);
+}
+.logoPlatzi {
+  color: greenyellow;
+  font-size: 10px;
+}
+}
+@media (min-width:515px) {
+  .inicio {
+    width: 463px;
+  }
+  .inicio1 {
+    width: 275px;
+  }
+  .fila1 {
+    margin-top: 5px;
+  }
+  .fila2 {
+    margin-top: 5px;
+  }
+  }
+@media (min-width:600px) {
+  .biografia {
+    width:600px;
+  }
+  .inicio { 
+    width: 519px;
+  }
+  .inicio1 {
+    width: 340px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .logoPlatzi {
+    font-size: 13px;
+  }
+  }
+@media (min-width:700px) {
+  .biografia {
+    width:697px;
+  }
+  .inicio {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .inicio1 {  
+    width: 420px;
+    height: 830px;
+  }
+  .inicio2 {
+    width: 236px;
+    height: 430px;
+  }
+  .rectangulo {
+    width: 220px;
+    height: 420px;
+  }
+  .titleRec {
+    font-size: 20px;
+  }
+  .rec1 {
+    height: 33px;
+    width: 215px;
+  }
+  .info {
+    height: 100%;
+  }
+  .infoPersonal {
+    height: 33px;
+  }
+  .personal {
+    height: 60px;
+  }
+  .infoEducacion {
+    height: 33px;
+  }
+  .educacion {
+    height: 60px;
+  }
+  .fila1 {
+    margin-top: 8px;
+  }
+  .fila2 {
+    margin-top: 8px;
+  }
+}
+@media (min-width:800px) {
+  .biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+  }
+  .inicio {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+  }
+  .inicio1 {
+    width: 455px;
+    height: 920px;
+    font-size:15px;/* revisar tamaño */
+    line-height: 1.85;
+  }
+  .inicio2 {
+    width: 224px;
+    height: 424px;
+  }
+  .logoPlatzi {
+    font-size: 12px;
+  }
+}
