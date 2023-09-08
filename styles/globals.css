@@ -2,19 +2,24 @@
   
   :root {
     --background: white;
-    --backgroundclaro:#75a0f7d8;
+    --background2:#23272f;
+    --backgroundclaro:#75a0f7;
+    --backgroundTitulo:#acc7ff;
     --color1:white;
     --letras:#3366cc;
     --letras2:black;
     --azul1:#3366cc;
     --azul2:#36c;
-    --bordeclaro:gray;
+    --bordeclaro:rgb(191, 191, 191);
     --bordeoscuro:#78a4fc37;
     --borde:#3366cc;
+    --grisclaro:rgba(177, 177, 177, 0.226); 
   }
   [data-theme='dark'] {
     --background:#23272f;
-    --backgroundclaro:#75a0f7d8;
+    --background2:rgb(200, 200, 200);
+    --backgroundclaro:#75a0f7;
+    --backgroundTitulo:#acc7ff;
     --color1:rgb(7, 7, 7);
     --letras:#3366cc;
     --letras2:rgb(212, 212, 212);
@@ -23,6 +28,7 @@
     --bordeclaro:gray;
     --bordeoscuro:#78a4fc37;
     --borde:#3366cc;
+    --grisclaro:rgba(104, 104, 104, 0.193); 
 }
   * {
     box-sizing: border-box;

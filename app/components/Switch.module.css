@@ -1,0 +1,62 @@
+.containerSwitch {
+  width: 32px;
+  height: 82px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  margin-top:-45px;
+  bottom: 20px; /* Distancia desde abajo */
+  right: 20px; /* Distancia desde la derecha */
+  transition: top 0.3s;
+  
+  
+}
+.shifted {
+  margin-top: 41px; /* Ajusta este valor según sea necesario para ocultar el contenedor */
+}
+.onOff {
+  display: flex;
+  border: none;
+  flex-direction: column;
+  height: 25px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border: 2px solid transparent; /* Borde transparente oculto */
+  cursor: pointer;
+  
+}
+
+.on {
+  width: auto;
+  height: auto;
+  font-size: 30px;
+  color: var(--background2);
+}
+.off {
+  width: auto;
+  height: auto;
+  font-size: 30px;
+}
+.hidden {
+  display: none;
+}
+.arrowTheme {
+  font-size:21px ;
+  color: var(--azul1);
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease; /* Agregar una transición suave */
+}
+.switch { 
+  position: absolute;
+
+}
+.slider {
+  color: rgba(128, 128, 128, 0);
+}

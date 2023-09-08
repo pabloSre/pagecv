@@ -22,6 +22,7 @@
   align-items: center;
   min-width: 20px;
   min-height: 20px;
+  color: var(--letras2);
   width: 20px;
   height: 25px;
   cursor: pointer;
@@ -78,7 +79,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width:180px;
+  width:150px;
   padding-right: 15px;
   height: 65px;
 }
@@ -92,15 +93,15 @@
   justify-content: flex-end;
   align-items: center;
   height: 35px;
-  width: 160px;/* 270 */
-}
+  width: 150px;/* 270 */
+  }
 .cajaSearchOpen {
   justify-content: flex-start;
+  
 }
-/* 
 .cajaSearch input[type='text'] {
   padding-left: 20px;
-} */
+} 
 .search {
   display: flex;
   justify-content: flex-start;
@@ -108,13 +109,15 @@
   border: 0;
   width: 20px;
   height: 20px;
+  background-color: var(--background);
+  color: var(--letras2);
 }
 .searchOpen{
   display: flex;
   justify-content: flex-start;
   padding-left: 28px;
   outline: none;
-  width: 170px;
+  width: 150px;
   height: 32px;
   border-radius: 2px;
   border: 2px solid var(--azul2);
@@ -130,10 +133,11 @@
   top: 50%;
   transform: translateY(-50%);
   font-weight: 700;
-  margin-left: 10px ;
+  margin-left: 10px;
+  color: var(--letras2);
 }
 .navUser1 {
-  display: flex;
+  display:none;
   justify-content: space-evenly;
   align-items: center;
   width: 192px;
@@ -147,12 +151,13 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 138px;
+  width: 250px;
+  padding: 2px;
 }
 .textUser {
   display: flex;/* flex */
   font-size: 0.7em;
-  padding: 2px;/* revisar que esta todo muy cerca */
+  padding-left: 2px;/* revisar que esta todo muy cerca */
   color:var(--azul1);
 }
 .options {
@@ -161,16 +166,37 @@
 }
 
 /* responsive */
+@media(min-width: 450px) {
+  .searchOpen{
+    width: 180px;
+    }
+  .navbarLeft {
+    width:2350px;
+    }
+}
+
 
 @media(min-width: 600px) {
   .searchOpen {
     width: 100%;
   }
 
-.navbarRigth {
-  width:600px;
+  .navbarRigth {
+  width:1600px;
   }
   .cajaSearch {
     width: 100%;
+  }
+  .navUser1 {
+    display:flex;
+  }
+  .textUser {
+    font-size: 0.8em;
+  }
+}
+
+@media(min-width: 800px) {
+  .textUser {
+    font-size: 0.876em;
   }
 }

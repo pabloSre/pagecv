@@ -1,3 +1,9 @@
+/* div poadding */
+/* .paddingHome {
+  width: 100%;
+  padding-left: 2.75em;
+  padding-right: 2.75em;
+} */
 /* generales */
 .nav2 {
   height: 68px;
@@ -35,6 +41,7 @@
 .menuHome {
   width: 20px;
   height: 20px;
+  color: var(--letras2);
 }
 .menuHome2 {
   width: 230px;
@@ -80,18 +87,19 @@
   padding-left: 12px;
   padding-right: 5px;
   position: absolute;
-  width: 180px;
+  width: 160px;
 }
 .idiomas:hover {
   background-color: var(--bordeoscuro);
 }
 .iconLeng {
-  width: 22px;
+  width: 17px;
   height: 22px;
 }
 .cantidadIdiomas {
+  font-size: 0.8em;
   padding-left: 5px;
-  width: 120px;
+  width: 100px;
   color: var(--azul1);
 }
 .arrow {
@@ -103,14 +111,16 @@
 .listIdiomas{
   display: flex;
   flex-direction: column;
-  width: 180px;
+  width: 160px;
   height: 37px;
   background-color: var(--backgroundclaro);
   margin-top: 83px;
   list-style:none;
+  border-radius: 0px 0px 62px 62px;
 }
 .idiomas2 {
   padding: 10px 10px 10px 10px;
+  font-size: 0.8em;
 }
 /* NAV3 */
 .nav3 {
@@ -120,20 +130,28 @@
   flex-direction: row;
   width: 100%;
   height: 50px;
+  border-bottom: 1px solid var(--bordeclaro);
+  padding-left: 24px;
+  padding-right: 24px;
+  
+  
 }
 .nav3Left {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 150px;
 }
 .articulo {
-  font-size: 15px;
-  color: var(--azul1);
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 12px;
+  color: var(--letras2);
+  border-bottom: 2px solid var(--letras2);
+  
 }
 .discusion {
-  font-size: 15px;
+  font-size: 12px;
   color: var(--azul1);
+  padding-left: 20px;
 }
 .nav3Rigth {
   display: flex;
@@ -143,21 +161,52 @@
   height: 50px;
 }
 .herramientas {
-  width: 120px;
+  width: 70px;
   color: var(--azul1);
-  font-size: 15px;
+  font-size: 12px;
   padding-right: 10px;
 }
 
-/*  */
+/*INICIO BIO  */
 .biografia {
   display: flex;
+  width: 434px;
+  height: 2000px;
   flex-direction: column;
-  padding: 90px 30px 90px 30px;
+  padding:20px 30px 90px 30px;
+  background-color: rgba(0, 0, 255, 0.327);
+  
 }
 .inicio {
-  padding: 50px;
+  width: 393px;
+  height: 2000px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 255, 72, 0.327);
+  
 }
+.inicio1 {
+  color: var(--letras2);
+  width: 380px;
+  height: 788px;
+  font-size: 12px;
+  font-family: 'DM Sans', sans-serif;
+  background-color: rgba(242, 255, 0, 0.327);
+  line-height: 1.6;
+}
+
+.inicio3 {
+  font-size: 10px;
+}
+/* .verMas summary::marker{
+  content: "+";
+} */
+.inicio2 {
+  display:none;
+}
+
+
+
 .etimologia {
   padding: 50px
 }
@@ -178,4 +227,260 @@
   .title {
     font-size: 37px;
   }
+  .iconLeng {
+    width: 22px;
+  }
+  .cantidadIdiomas {
+    font-size: 0.876em;
+    width: 120px;
+  }
+  .idiomas2 {
+    font-size: 0.9em;
+  }
+  .articulo {
+    font-size: 15px;
+  }
+  .discusion {
+    font-size: 15px;
+  }
+  .herramientas {
+    font-size: 15px;
+  }
+  /* BIOGRAFIA */
+  .biografia {
+    width: 470px;
+    }
+  /* general */
+  .inicio {
+    width: 430px;
+  } 
+  /* texto */
+  .inicio1 {
+    width: 250px;
+  }
+  
+  /* inicio 2 */
+  .inicio2 {
+    display:flex;
+    width: 230px;
+    height: 400px;
+    background-color:var(--background2);
+    justify-content: center;
+    align-items:stretch ;/* donde empieza el borde. */
+  }
+  .rectangulo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 380px;
+    gap: 3px;
+    background-color: var(--background);
+  }
+  .rec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    background-color: var(--backgroundTitulo);
+    padding: 2px 9px 2px 9px;
+    width: 196px;
+    height: 27px;
+  }
+  .titleRec {
+    font-size: 18px;
+    font-family: 'Lisu Bosa', serif;
+    color: var(--background);/* letrablanca */
+  }
+  .imagen1 {
+    display: flex;
+    width: 125px;
+    height: 183px;
+    object-fit: cover;
+  }
+  .info {
+    width: 97%;
+    height: 150px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 8px;
+  }
+  .infoPersonal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 27px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: var(--backgroundclaro);
+  }
+  .fila1 {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    margin-top: 3px; 
+    padding: 0;
+  }
+  .subTitle {
+    height: 15px;
+    width: 79px;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 11px;
+    margin: 0;
+    list-style: none;
+  }
+  .subTitle2 {
+    height: 15px;
+    list-style: none;
+    width: 115px;
+    text-decoration: none;
+    padding-left: 9px;
+    font-size: 11px;
+    margin: 0;
+    list-style: none;
+  }
+  .fila2 {
+    margin: 0;
+    margin-top: 3px; 
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    width:110px ;
+  }
+  .personal {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 9px;
+    line-height: 1.4;
+    margin: 0;
+    background-color: var(--backgroundTitulo);
+  }
+  .infoEducacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    width:100%;
+    height: 27px;
+    background-color: var(--backgroundclaro);
+  }
+  .educacion {
+    display: flex;
+    width: 100%;
+    height: 47px;
+    font-size: 9px;
+    line-height: 1.4;
+    margin: 0;
+    background-color: var(--backgroundTitulo);
+  }
+  .logoPlatzi {
+    color: greenyellow;
+    font-size: 10px;
+  }
+  
 }
+@media (min-width:515px) {
+  .inicio {
+    width: 463px;
+  }
+  .inicio1 {
+    width: 275px;
+  }
+  }
+@media (min-width:600px) {
+  .biografia {
+    width:600px;
+  }
+  .inicio { 
+    width: 519px;
+  }
+  .inicio1 {
+    width: 340px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+@media (min-width:700px) {
+  .biografia {
+    width:697px;
+  }
+  .inicio {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .inicio1 {  
+    width: 420px;
+    height: 830px;
+  }
+  .inicio2 {
+    width: 236px;
+    height: 430px;
+  }
+  .rectangulo {
+    width: 220px;
+    height: 420px;
+  }
+  .titleRec {
+    font-size: 20px;
+  }
+  .rec1 {
+    height: 33px;
+    width: 215px;
+  }
+  .info {
+    height: 100%;
+  }
+  .infoPersonal {
+    height: 33px;
+  }
+  .personal {
+    height: 60px;
+  }
+  .infoEducacion {
+    height: 33px;
+  }
+  .educacion {
+    height: 60px;
+  }
+  
+}
+@media (min-width:800px) {
+  .biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+  }
+  .inicio {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+  }
+  .inicio1 {
+    width: 455px;
+    height: 920px;
+    font-size:15px;/* revisar tamaño */
+    line-height: 1.85;
+  }
+  .inicio2 {
+    width: 275px;
+    height: 650px;
+  }
+}/* 
+@media (min-width: 1000px) {
+  .padding-left: 2.75em;
+} */

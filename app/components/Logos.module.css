@@ -28,9 +28,11 @@
   height:fit-content;
   
 }
+
+/* FALTA DEFINIR BIEN TAMAÑOS EN LOGOS(donde se llama al componente GENERAL Y ACÁ */
 @media(min-width: 450px) {
   .logo{
     display: flex;
-    
   }
 }
+

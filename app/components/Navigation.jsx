@@ -6,6 +6,7 @@ import { BsSearch } from 'react-icons/Bs';
 import { SlOptionsVertical } from 'react-icons/sl'
 import { Logos } from './logos';
 import styles from './navigation.module.css';
+import { Switch } from '../components/Switch';
 
 import Link from 'next/link';
 
@@ -17,12 +18,18 @@ const links = [{
   route: '/proyectos' // Corregí el nombre de la ruta si es necesario
 }]
 
-export function Navigation({ theme }) {
+
+export function Navigation() {
   //abrir menu hamburguesa
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   //abrir search
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  
+  const [theme, setTheme] = useState('light');
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme);
+    
+    console.log('temahome', newTheme);
+  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   }
@@ -70,8 +77,13 @@ export function Navigation({ theme }) {
         </nav>
 
         <Logos theme={theme} />
-      </section>
 
+        <div className={styles.changeSwitch}>
+        <Switch onThemeChange={handleThemeChange} />
+        </div>
+        
+      </section>
+      
       <section className={`${styles.navbarRigth} ${isSearchOpen ? styles.navbarRigthOpen : ''}`}>
         <label className={`${styles.cajaSearch} ${isSearchOpen ? styles.cajaSearchOpen : ''}`} ref={searchContainerRef}>
           {isSearchOpen && (
@@ -87,8 +99,8 @@ export function Navigation({ theme }) {
           <div className={styles.navUser}>
             <p className={styles.textUser}>Crear una cuenta</p>
             <p className={styles.textUser}>Acceder</p>
+            <SlOptionsVertical className={styles.options}/>
           </div>
-          <SlOptionsVertical className={styles.options} />
         </div>
       </section>
     </header>

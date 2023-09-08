@@ -1,15 +1,26 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import styles from './Switch.modules.css';
+import styles from './Switch.module.css';
+import {BsToggleOff} from 'react-icons/Bs';
+import {BsToggleOn} from 'react-icons/Bs';
+import {IoIosArrowDown} from 'react-icons/Io'
 
 export function Switch({ onThemeChange }) {
   const [theme, setTheme] = useState('light');
+  const [isOnVisible, setIsOnVisible] = useState(true);
+  const [isArrowRotated, setIsArrowRotated] = useState(false);
 
-  const handleChange = (e) => {
-    const newTheme = e.target.checked ? 'dark' : 'light';
+  const handleChange = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
     console.log('temaSwitch:', newTheme);
     onThemeChange(newTheme);
+    setIsOnVisible(!isOnVisible);
+  }
+
+  const handleArrowClick = () => {
+    setIsArrowRotated(!isArrowRotated);
+    setIsOnVisible(false); // Ocultar el botón al hacer clic en la flecha
   }
 
   useEffect(() => {
@@ -17,12 +28,15 @@ export function Switch({ onThemeChange }) {
   }, [theme]);
 
   return (
-    <div className={styles.containerSwitch}>
-      <span className={styles.change}>Change Theme</span>
-      <label className={styles.switch}>
-        <input type="checkbox" onChange={handleChange} checked={theme === 'dark'} />
-        <span className={styles.slider}></span>
-      </label>
+    <div className={`${styles.containerSwitch} ${isArrowRotated ? styles.shifted : ''}`}>
+      <div className={styles.onOff}>
+        <BsToggleOff onClick={handleChange} className={`${styles.off} ${isOnVisible ? styles.hidden : ''}`} />
+        <BsToggleOn onClick={handleChange} className={`${styles.on} ${isOnVisible ? '' : styles.hidden}`} />
+        <IoIosArrowDown
+          className={`${styles.arrowTheme} ${isArrowRotated ? styles.rotate : ''}`}
+          onClick={handleArrowClick}
+        />
+      </div>
     </div>
   );
 }
