@@ -7,7 +7,7 @@ import { SlOptionsVertical } from 'react-icons/sl'
 import { Logos } from './logos';
 import styles from './navigation.module.css';
 import { Switch } from '../components/Switch';
-
+/* 
 import Link from 'next/link';
 
 const links = [{
@@ -17,7 +17,7 @@ const links = [{
   label: 'Proyectos',
   route: '/proyectos' // Corregí el nombre de la ruta si es necesario
 }]
-
+ */
 
 export function Navigation() {
   //abrir menu hamburguesa
@@ -61,14 +61,13 @@ export function Navigation() {
           {isMenuOpen && (
             <section className={styles.menuNav}>
               <ul className={styles.navbar}>
-                {links.map(({ label, route }) => (
+              {/*  {links.map(({ label, route }) => (
                   <li key={label} className={styles.navbar1}>
                     <Link href={route} className={styles.textnav}>
                       {label}
                     </Link>
                   </li>
-                ))}
-                <li className={styles.navbar1}><a className={styles.textnav} href="/">Help</a></li>
+                ))} */}
                 <li className={styles.navbar1}><a className={styles.textnav} href="/">Contact</a></li>
                 <li className={styles.navbar1}><a className={styles.textnav} href="/">Notificar un error</a></li>
               </ul>

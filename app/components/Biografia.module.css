@@ -1,17 +1,17 @@
 /*INICIO BIO  */
 .biografia {
   display: flex;
-  width: 434px;
-  height: 2000px;
+  width: 350px;/* 434 */
+  height: 1200px;
   flex-direction: column;
-  padding:20px 30px 90px 30px;
+  padding:20px 30px 0px 30px;
   background-color:var(--background);
   /* poner padding left y rigth en general
   para poder central al medio todo. */
 }
 .inicio {
-  width: 393px;
-  height: 2000px;
+  width: 330px;/* width: 393px */
+  height: 830px;
   display: flex;
   flex-direction: row;
   background-color: var(--background);
@@ -35,7 +35,7 @@
 /* BIOGRAFIA */
 .biografia {
   width: 470px;
-  }
+}
 /* general */
 .inicio {
   width: 430px;
@@ -43,6 +43,7 @@
 /* texto */
 .inicio1 {
   width: 250px;
+  padding-right: 7px;
 }
 /* inicio 2 */
 .inicio2 {
@@ -53,6 +54,7 @@
   background-color:var(--bordeclaro);
   justify-content: center;
   align-items:stretch ;/* donde empieza el borde. */
+  border: 1px solid var(--grisclaro)
 }
 .rectangulo {
   display: flex;
@@ -95,17 +97,18 @@
   justify-content: flex-start;
   align-items: center;
   font-size: 8px;
-}
+  }
 .infoPersonal {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 27px;
+  height: 17px;
   margin: 0;
   font-weight: bold;
   font-size: 12px;
   background-color: var(--backgroundTitulo);
+  
 }
 .fila1 {
   list-style: none;
@@ -160,7 +163,7 @@
   font-size: 12px;
   margin: 0;
   width:100%;
-  height: 27px;
+  height: 17px;
   background-color: var(--backgroundTitulo);
 }
 .educacion {
@@ -238,14 +241,8 @@
   .info {
     height: 100%;
   }
-  .infoPersonal {
-    height: 33px;
-  }
   .personal {
     height: 60px;
-  }
-  .infoEducacion {
-    height: 33px;
   }
   .educacion {
     height: 60px;

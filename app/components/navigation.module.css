@@ -12,7 +12,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width:220px;
+  width:220px;/* 220 */
   position: relative;
   height: 65px;
 }
@@ -43,7 +43,7 @@
 /* navbar del menú */
 .menuNav {
   display: flex;
-  width:150px;
+  width:150px;/* 150 */
   height: 100%;
   margin-top: 78px;
   margin-left: 105px;/* resolver problema cuando se corre. */
@@ -53,17 +53,18 @@
   display:flex;
   flex-direction: column;
   align-items: flex-end;
-  border: 1px solid var(--bordeclaro);
-  background-color: var(--background);
+  border: 1px solid var(--bordeoscuro);
+  background-color: var(--backgroundNav);
   color: var(--color1);
-  height: 220px;
-  width: 150px;
+  height: 75px;
+  width: 140px;
   padding-left: 0;
   
 }
 .navbar1 {
   display: flex;
   align-items: flex-start;
+  font-size: 0.8em;
   width: 90%;
   margin: 10px 5px 10px 10px;
 }
@@ -169,10 +170,13 @@
 @media(min-width: 450px) {
   .searchOpen{
     width: 180px;
-    }
+  }
   .navbarLeft {
     width:2350px;
-    }
+  }
+  .navbar1 {
+    font-size: 0.876em;
+  }
 }
 
 

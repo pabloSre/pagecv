@@ -5,6 +5,7 @@
     --background2:#23272f;
     --backgroundclaro:#75a0f7;
     --backgroundTitulo:#acc7ff;
+    --backgroundNav:white;
     --color1:white;
     --letras:#3366cc;
     --letras2:black;
@@ -13,13 +14,14 @@
     --bordeclaro:rgb(237, 237, 237);
     --bordeoscuro:#78a4fc37;
     --borde:#3366cc;
-    --grisclaro:rgba(177, 177, 177, 0.226); 
+    --grisclaro:rgba(101, 101, 101, 0.226); 
   }
   [data-theme='dark'] {
     --background:#23272f;
     --background2:rgb(200, 200, 200);
     --backgroundclaro:#75a0f7;
     --backgroundTitulo:#acc7ff;
+    --backgroundNav: rgb(212, 212, 212);
     --color1:rgb(7, 7, 7);
     --letras:#3366cc;
     --letras2:rgb(212, 212, 212);
@@ -48,6 +50,9 @@
     background-color: var(--background);
   }
 
+  /* @media (min-width:1000px) {
+    
+  } */
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

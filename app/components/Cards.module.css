@@ -1,0 +1,63 @@
+.contenedorCards {
+  width: 370px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.cardArriba {
+  width: 370px;
+  height:200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--background2);
+}
+.card1 {
+  width: 100px;
+  height: auto;
+}
+.card2 {
+  width: 100px;
+  height: auto;
+}
+.card3 {
+  width: 100px;
+  height: auto;
+}
+.titleCard {
+  width: 80%;
+  height: 17px;
+  font-size: 0.8em;
+  background-color: var(--background);
+}
+.imgCard1 {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.deploy {
+  width: 10px;
+  height: 10px;
+}
+.cardAbajo {
+  width:370px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--backgroundclaro);
+}
+.card4 {
+  width: 100px;
+  height: auto;
+}
+.card5 {
+  width: 100px;
+  height: auto;
+}
+.card6 {
+  width: 100px;
+  height: auto;
+}

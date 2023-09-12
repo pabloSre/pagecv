@@ -5,15 +5,19 @@ import styles from './homepage.module.css';
 import { TfiMenuAlt } from 'react-icons/tfi';
 import {IoIosArrowDown} from 'react-icons/Io';
 import { Biografia } from '../components/Biografia';
-
+import { Cards } from '../components/Cards';
 
 export function HomePage() {
   
   /* EXPORT DEFAULT HACE QUE NO TENGAS QUE EXPORTARLO AL FINAL DEL PROYECTO */
     //abrir menu hamburguesa
     const [isMenu2Open, setIsMenu2Open] = useState(false);
+    /* 
+    const [isArrowRotated, setIsArrowRotated] = useState(false);
+   VER ARROW ROTATED EN SWITCH Y REPLICAR ACA */
+    const [isInputIdiomasOpen, setIsInputIdiomaOpen] = useState(false);
     /*  const [isVerMasOpen, setIsVerMasOpen] = useState(false);
-
+    
     const handleVerMasOpen = () => {
       isVerMasOpen(!setIsVerMasOpen)
     } */
@@ -22,7 +26,7 @@ export function HomePage() {
     }
 
     
-    const [isInputIdiomasOpen, setIsInputIdiomaOpen] = useState(false)
+    
     const toggleInputIdioma = () => {
       setIsInputIdiomaOpen(!isInputIdiomasOpen)
     }
@@ -43,16 +47,12 @@ export function HomePage() {
               <ul className={styles.menuList}>
                 <a className={styles.zonas}href="#inicio">
                   Inicio</a>
-                <a className={styles.zonas}href="#">
-                  Etimologia</a>
-                <a className={styles.zonas}href="#historia">
-                  Historia</a>
+                <a className={styles.zonas}href="#proyectos">
+                  Proyectos</a>
                 <a className={styles.zonas}href="#curriculum">
                   Curriculum</a>
                 <a className={styles.zonas}href="#extras">
                   Extras</a>
-                <a className={styles.zonas}href="#Referencias">
-                  Referencias</a>
               </ul>
             </section>
           )}
@@ -73,7 +73,8 @@ export function HomePage() {
         Cambiar idioma
         </p>
 
-        <IoIosArrowDown className={styles.arrow}/>
+        <IoIosArrowDown
+          className={styles.arrow}/>
       </label>
 
       
@@ -99,8 +100,8 @@ export function HomePage() {
       </section>
 
       <Biografia id='inicio'/>
-
-
+      <Cards/>
+{/* 
       <section id='etimologia' className={styles.etimologia}>
         texto 2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum, ut quasi voluptatum veritatis nisi odit explicabo repudiandae debitis alias, nihil iste maxime? Vero repellat accusantium veniam consequuntur commodi perferendis!
       </section>
@@ -119,7 +120,7 @@ export function HomePage() {
 
       <section id='extras' className={styles.extras}>
         Texto 6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laboriosam dolorum facilis perferendis odit architecto delectus? Minus unde aliquid sunt hic ullam fugit velit pariatur recusandae, enim, quia provident corporis!
-      </section>
+      </section> */}
 
     
     {/* </div> */}
