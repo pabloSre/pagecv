@@ -24,6 +24,7 @@
   align-items: center;
   height: 68px;
   width: 200px;
+  position: relative;
 }
 .menu2{
   height: 40px;
@@ -42,24 +43,50 @@
   width: 20px;
   height: 20px;
   color: var(--letras2);
+  
 }
 .menuHome2 {
-  width: 170px;
-  height:150px;
-  margin-top: 190px;
-  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  width: 115px;
+  height: 0;
+  top: 54px;
   background-color: var(--backgroundNav);
   border: 1px solid var(--bordeoscuro);
+  position: absolute;
+  opacity: 0;
+  transition: height 0.7s ease, opacity 0.7s ease; 
 }
-.menuList {
-  width: 137px;
-  height: 133px;
+.menuHome2Open {
+  display: flex;
+  height: 140px;
+  opacity: 1;
+}
+.listZonas {
   display: flex;
   flex-direction: column;
+  height: fit-content;
 }
+.menuList {
+  display: none;
+  flex-direction: column;
+  width: 110px;
+  height: 0;
+  margin: 0;
+  padding-left: 9px;
+  transition: height 0.7s ease, opacity 0.7s ease;  
+  opacity: 0;
+  
+}
+.menuListActive  {
+  display: flex;
+  height: auto;
+  opacity: 1;
+}
+
 .zonas {
   width: 100%;
-  height: 80px;
+  height: 30px;
   list-style: none;
   text-decoration: none;
   font-size: 0.8em;
@@ -67,16 +94,18 @@
 .title {
   font-family: 'Lisu Bosa', serif;
   font-weight: 500;
+  margin: 0;
   font-size: 25px;
   color: var(--letras2)
 }
 /* nadRigth */
 .inputIdiomas {
   display: flex;
-  width: 246px;
-  height: 68px;
+  width: 160px;
+  height: 35px;
   justify-content: flex-end;
   align-items: center;
+  flex-direction: column;
 }
 .idiomas {
   height: 30px;
@@ -87,8 +116,9 @@
   cursor: pointer;
   padding-left: 12px;
   padding-right: 5px;
-  position: absolute;
+  position: relative;
   width: 160px;
+  border-radius: 10px 10px 0 0;
 }
 .idiomas:hover {
   background-color: var(--bordeoscuro);
@@ -99,6 +129,7 @@
 }
 .cantidadIdiomas {
   font-size: 0.8em;
+  margin: 0;
   padding-left: 5px;
   width: 100px;
   color: var(--azul1);
@@ -106,21 +137,29 @@
 .arrow {
   color:  var(--azul1);
 }
-.listIdiomas {
-  display: none;
-}
 .listIdiomas{
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 160px;
-  height: 37px;
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   background-color: var(--backgroundclaro);
-  margin-top: 83px;
+  position: absolute;
+  top: 117px;
   list-style:none;
-  border-radius: 0px 0px 22px 22px;
+  border-radius: 0px 0px 18px 18px;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+.listIdiomaOpen {
+  opacity: 1;
+  max-height: 35px;
 }
 .idiomas2 {
-  padding: 10px 10px 10px 10px;
+  padding: 8px 0 8px 0;
   font-size: 0.8em;
 }
 /* NAV3 */

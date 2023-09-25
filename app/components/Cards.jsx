@@ -5,52 +5,87 @@ import {LuExternalLink} from 'react-icons/Lu'
 import styles from './Cards.module.css';
 
 export function Cards() {
+
   return(
     <>
     <section className={styles.contenedorCards}>
       <section className={styles.cardArriba}>
+
         <div className={styles.card1}>
-          <h1 className={styles.titleCard}>random profile</h1>
-          <img src="portafolio2tienda.png" className={styles.imgCard1} alt='random profile' />
-          <a href="">
-          <LuExternalLink className={styles.deploy}/>
-          </a>
-        </div>
+          <div className={styles.img}>
+          <img src="generadorPerfiles.png" className={styles.imgCard1} alt='random profile' />
+          </div>
+          <div className={styles.descripcion}>
+          <h1 className={styles.titleCard}>Generador de perfiles{/*EN INGLES Random profile */}</h1>
+          <p className={styles.textCard}>
+            Genera perfiles atravez de una api  
+          </p>
+          </div>
+          </div>
+          <div className={styles.ContenedorLink}>
+            <div className={styles.Link}>
+            <LuExternalLink className={styles.deploy}/>
+            <a className={styles.linkDeploy} href="https://stalwart-gnome-b94e4a.netlify.app/">Ir al link </a>
+            </div>
+          </div>
+        
+
+
         <div className={styles.card2}>
-          <h1 className={styles.titleCard}></h1>
-          <img src="portafolio2tienda.png" className={styles.imgCard1} alt='Tu Shop' />
-          <a href="">
-          <LuExternalLink className={styles.deploy}/>
-          </a>
+        <div className={styles.img}>
+          <img src="portafolio2tienda.png" className={styles.imgCard2} alt='Tu Shop' />
+          {/* buscar una imagen mejor y hacer deploy  */}
+          </div>
+          <div className={styles.descripcion}>
+          <h1 className={styles.titleCard}>Tienda</h1>
+            <p className={styles.textCard}>Tienda fictisia para crear compras
+          </p>
+          </div>
         </div>
+
         <div className={styles.card3}>
-          <h1 className={styles.titleCard}></h1>
-          <img src="portafolio2tienda.png" className={styles.imgCard1} alt='work pending' />
-          <a href="">
-          <LuExternalLink className={styles.deploy}/>
-          </a>
+        <div className={styles.img}>
+          <img src="workpending3.png" className={styles.imgCard1} alt='work pending' />
+          </div>
+          <div>
+          <h1 className={styles.titleCard}>Work pending</h1>
+          <p className={styles.textCard}>
+          Agregar, editar y eliminar tareas. 
+          </p>
+          </div>
         </div>
+
       </section>
+      
       <section className={styles.cardAbajo}>
       <div className={styles.card4}>
-        <h1 className={styles.titleCard}></h1>
-          <img src="" alt='App login' />
+        
+          <img src="login1.jpg" className={styles.imgCard1} alt='App login' />
           <a href="">
-          <LuExternalLink className={styles.deploy}/>
+          <h1 className={styles.titleCard}></h1>
+          <p className={styles.textCard}>
+            Lorem ipsum dolor sit ameae provident dicta numquam. Hic, incidunt.
+          </p>
           </a>
         </div>
         <div className={styles.card5}>
-          <h1 className={styles.titleCard}></h1>
-          <img src="" alt='Detek' />
+          
+          <img src="detek2.png" className={styles.imgCard1} alt='Detek' />
           <a href="">
-          <LuExternalLink className={styles.deploy}/>
+          <h1 className={styles.titleCard}></h1>
+          <p className={styles.textCard}>
+            Lorem ipsum dolor sit ameae provident dicta numquam. Hic, incidunt.
+          </p>
           </a>
         </div>
         <div className={styles.card6}>
-          <h1 className={styles.titleCard}></h1>
+          
           <img src="" alt='#' />
           <a href="">
-          <LuExternalLink className={styles.deploy}/>
+          <h1 className={styles.titleCard}></h1>
+          <p className={styles.textCard}>
+            Lorem ipsum dolor sit ameae provident dicta numquam. Hic, incidunt.
+          </p>
           </a>
         </div>
       </section>

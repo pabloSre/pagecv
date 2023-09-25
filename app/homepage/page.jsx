@@ -36,52 +36,43 @@ export function HomePage() {
     <section className={styles.nav2}>
       <div className={styles.navleft}>
         
-      <div className={`${styles.menu2} ${isMenu2Open ? styles.menu2Blue : ''}`}>
-        <TfiMenuAlt 
-          className={styles.menuHome}
-          onClick={toggleMenu2}
-          />
+        <div className={`${styles.menu2} ${isMenu2Open ? styles.menu2Blue : ''}`}>
+          <TfiMenuAlt 
+            className={styles.menuHome}
+            onClick={toggleMenu2}
+            />
+        </div>
+
+      <div className={`${styles.menuHome2} ${isMenu2Open ? styles.menuHome2Open : ''}`}>
+        <ul className={`${styles.menuList} ${isMenu2Open  ? styles.menuListActive : ''}`}>
+          <li className={styles.listZonas}>
+            <a className={styles.zonas}href="#inicio">
+              Inicio</a>
+            <a className={styles.zonas}href="#proyectos">
+              Proyectos</a>
+            <a className={styles.zonas}href="#curriculum">
+              Curriculum</a>
+            <a className={styles.zonas}href="#extras">
+              Extras</a>
+          </li> 
+        </ul>
       </div>
-          {isMenu2Open && (
-            <section className={styles.menuHome2}>
-              <ul className={styles.menuList}>
-                <a className={styles.zonas}href="#inicio">
-                  Inicio</a>
-                <a className={styles.zonas}href="#proyectos">
-                  Proyectos</a>
-                <a className={styles.zonas}href="#curriculum">
-                  Curriculum</a>
-                <a className={styles.zonas}href="#extras">
-                  Extras</a>
-              </ul>
-            </section>
-          )}
       <h1 className={styles.title}>Pablo Re</h1>
       </div>
 
-      <section 
-        className={styles.inputIdiomas}
-        onClick={toggleInputIdioma}
-        >
+      <section className={styles.inputIdiomas}
+                onClick={toggleInputIdioma}>
       <label className={styles.idiomas}>
-        
           <img src="https://es.wikipedia.org/w/load.php?modules=skins.vector.icons&image=language&variant=progressive&format=original&skin=vector-2022&version=1vw3w" 
           className={styles.iconLeng}
           alt="idiomas" />
-        
-        <p className={styles.cantidadIdiomas}>
-        Cambiar idioma
-        </p>
-
-        <IoIosArrowDown
-          className={styles.arrow}/>
+        <p className={styles.cantidadIdiomas}>Cambiar idioma</p>
+        <IoIosArrowDown className={styles.arrow}/>
       </label>
-
-      
-        {isInputIdiomasOpen && (
+        {/* {isInputIdiomasOpen && ( */}
       <ul className={`${styles.listIdiomas} ${isInputIdiomasOpen ? styles.listIdiomaOpen : ''}`}>
-        <li className={styles.idiomas2}>Ingles</li></ul>
-      )}
+        <li className={styles.idiomas2}>Ingles</li>
+        </ul>
       </section>
 
     </section>

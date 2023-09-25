@@ -15,6 +15,10 @@
     --bordeoscuro:#78a4fc37;
     --borde:#3366cc;
     --grisclaro:rgba(101, 101, 101, 0.226); 
+    --link:#83ec38;
+    --prueba:#ff2af4;
+    --prueba2:#2affca;
+    --blanco:white;
   }
   [data-theme='dark'] {
     --background:#23272f;
@@ -31,6 +35,10 @@
     --bordeoscuro:#78a4fc37;
     --borde:#3366cc;
     --grisclaro:rgba(104, 104, 104, 0.193); 
+    --link:#0dcf0a;
+    --prueba:#ff2af4;
+    --prueba2:#2affca;
+    --blanco:white;
 }
   * {
     box-sizing: border-box;

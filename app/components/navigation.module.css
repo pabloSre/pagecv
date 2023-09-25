@@ -16,18 +16,6 @@
   position: relative;
   height: 65px;
 }
-.menuIcon {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 20px;
-  min-height: 20px;
-  color: var(--letras2);
-  width: 20px;
-  height: 25px;
-  cursor: pointer;
-  position: absolute;
-}
 .menu {
   display: flex;
   align-items: center;
@@ -35,32 +23,71 @@
   width: 44px;
   height: 44px;
   padding: 2px;
+  position: relative;
+  
 }
 .blue {
   border: 2px solid var(--azul1);
 }
+.divIcon {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.menuIcon {
+  min-width: 20px;
+  min-height: 20px;
+  color: var(--letras2);
+  width: 20px;
+  height: 25px;
+  cursor: pointer;
+}
+
 
 /* navbar del menú */
 .menuNav {
   display: flex;
-  width:150px;/* 150 */
-  height: 100%;
-  margin-top: 78px;
-  margin-left: 105px;/* resolver problema cuando se corre. */
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 0;
+  top: 42px ;
+  transform: translateX(48px);
   position: absolute;
+  overflow: hidden;
+  transition: height 0.5s ease, opacity 0.5s ease;  /* Modificar la duración y la función de temporización */
+  opacity: 0;
+  z-index: 10;
+}
+.menuNavActive {
+  height: 77px;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.7s ease;
 }
 .navbar {
-  display:flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
   border: 1px solid var(--bordeoscuro);
   background-color: var(--backgroundNav);
   color: var(--color1);
-  height: 75px;
+  height: 0;
   width: 140px;
+  margin: 0;
   padding-left: 0;
-  
+  transition: height 0.5s ease, opacity 0.5s ease;  
+  opacity: 0;
 }
+  .navbarActive {
+  display: flex ;
+  height: 77px;
+  opacity: 1;
+} 
+
 .navbar1 {
   display: flex;
   align-items: flex-start;
@@ -72,8 +99,8 @@
   list-style: none;
   text-decoration: none;/* hacer mas gruesa */
   color: var(--azul1);
-
 }
+
 /* navbar Rigth */
 .navbarRigth {
   display: flex;
@@ -94,11 +121,12 @@
   justify-content: flex-end;
   align-items: center;
   height: 35px;
-  width: 150px;/* 270 */
-  }
+  width: 130px;/* 270 */
+  transition: all 1s ease ;;
+}
 .cajaSearchOpen {
   justify-content: flex-start;
-  
+  width: 100%;
 }
 .cajaSearch input[type='text'] {
   padding-left: 20px;
@@ -112,16 +140,32 @@
   height: 20px;
   background-color: var(--background);
   color: var(--letras2);
+  transition: width 2s ease;
+  opacity: 0;
+  animation: slideSearch 0.5s linear 0s 1 normal forwards
 }
 .searchOpen{
   display: flex;
   justify-content: flex-start;
   padding-left: 28px;
   outline: none;
-  width: 150px;
+  width: 145px;
   height: 32px;
   border-radius: 2px;
   border: 2px solid var(--azul2);
+  opacity: 1;
+}
+
+@keyframes slideSearch {
+	0% {
+		transform: scaleX(0);
+		transform-origin: 0% 0%;
+	}
+
+	100% {
+		transform: scaleX(1);
+		transform-origin: 0% 0%;
+	}
 }
 /* .searchOpen::placeholder {
   padding-left: 25px;
@@ -129,6 +173,7 @@
 .searchOpen input[type="text"] {
   padding-left: 25px;
 }
+
 .SearchIcon {
   position:absolute;
   top: 50%;
@@ -136,6 +181,8 @@
   font-weight: 700;
   margin-left: 10px;
   color: var(--letras2);
+  transition: opacity 0.5s ease;
+  
 }
 .navUser1 {
   display:none;
@@ -169,7 +216,7 @@
 /* responsive */
 @media(min-width: 450px) {
   .searchOpen{
-    width: 180px;
+    width: 155px;
   }
   .navbarLeft {
     width:2350px;
@@ -193,6 +240,9 @@
   }
   .navUser1 {
     display:flex;
+  }
+  .navUser0 {
+    display: none;
   }
   .textUser {
     font-size: 0.8em;

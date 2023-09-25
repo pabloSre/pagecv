@@ -57,10 +57,12 @@ export function Navigation() {
     <header className={styles.Header}>
       <section className={styles.navbarLeft}>
         <nav className={`${styles.menu} ${isMenuOpen ? styles.blue : ''}`}>
+          <div className={styles.divIcon}>
           <TfiMenu className={styles.menuIcon} onClick={toggleMenu} />
-          {isMenuOpen && (
-            <section className={styles.menuNav}>
-              <ul className={styles.navbar}>
+          </div>
+          {/* {isMenuOpen && ( */}
+            <section className={`${styles.menuNav} ${isMenuOpen ? styles.menuNavActive : ''}`}>
+              <ul className={`${styles.navbar} ${isMenuOpen ? styles.navbarActive : ''}`}>
               {/*  {links.map(({ label, route }) => (
                   <li key={label} className={styles.navbar1}>
                     <Link href={route} className={styles.textnav}>
@@ -68,11 +70,15 @@ export function Navigation() {
                     </Link>
                   </li>
                 ))} */}
-                <li className={styles.navbar1}><a className={styles.textnav} href="/">Contact</a></li>
-                <li className={styles.navbar1}><a className={styles.textnav} href="/">Notificar un error</a></li>
+                <li className={styles.navbar1}>
+                  <a className={styles.textnav} href="/">Contact</a>
+                  </li>
+                <li className={styles.navbar1}>
+                  <a className={styles.textnav} href="/">Notificar un error</a>
+                  </li>
               </ul>
             </section>
-          )}
+         {/*  )} */}
         </nav>
 
         <Logos theme={theme} />

@@ -50,11 +50,11 @@
   display:flex;
   width: 230px;
   height: 400px;
-  border: 1px solid var(--bordeclaro);
+  border: 1px solid var(--blanco);
   background-color:var(--bordeclaro);
   justify-content: center;
   align-items:stretch ;/* donde empieza el borde. */
-  border: 1px solid var(--grisclaro)
+  
 }
 .rectangulo {
   display: flex;

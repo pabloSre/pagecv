@@ -9,12 +9,15 @@
   margin-top:-45px;
   bottom: 20px; /* Distancia desde abajo */
   right: 20px; /* Distancia desde la derecha */
-  transition: top 0.3s;
-  
-  
+  transition: margin-top 0.5s ease, opacity 0.3s ease;
+  opacity: 0.7;
+}
+.containerSwitch:hover {
+  opacity: 1;
 }
 .shifted {
   margin-top: 41px; /* Ajusta este valor según sea necesario para ocultar el contenedor */
+  opacity: 1;
 }
 .onOff {
   display: flex;
@@ -41,6 +44,7 @@
   width: auto;
   height: auto;
   font-size: 30px;
+  color: var(--background2);
 }
 .hidden {
   display: none;
@@ -49,6 +53,7 @@
   font-size:21px ;
   color: var(--azul1);
 }
+
 .rotate {
   transform: rotate(180deg);
   transition: transform 0.3s ease; /* Agregar una transición suave */

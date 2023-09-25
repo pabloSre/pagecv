@@ -28,6 +28,7 @@ export function Switch({ onThemeChange }) {
   }, [theme]);
 
   return (
+    <>
     <div className={`${styles.containerSwitch} ${isArrowRotated ? styles.shifted : ''}`}>
       <div className={styles.onOff}>
         <BsToggleOff onClick={handleChange} className={`${styles.off} ${isOnVisible ? styles.hidden : ''}`} />
@@ -38,5 +39,6 @@ export function Switch({ onThemeChange }) {
         />
       </div>
     </div>
+    </>
   );
 }
