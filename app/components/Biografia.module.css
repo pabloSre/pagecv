@@ -1,9 +1,10 @@
 /*INICIO BIO  */
 .biografia {
   display: flex;
-  width: 350px;/* 434 */
-  height: 1200px;
+  width: 375px;/* 434 */
+  height: 745px;
   flex-direction: column;
+  border-bottom: 1px solid var(--background2);
   padding:20px 30px 0px 30px;
   background-color:var(--background);
   /* poner padding left y rigth en general
@@ -19,7 +20,7 @@
 .inicio1 {
   color: var(--letras2);
   width: 380px;
-  height: 788px;
+  height: 715px;
   font-size: 12px;
   font-family: 'DM Sans', sans-serif;
   background-color: var(--background);

@@ -4,8 +4,10 @@ import { useState } from 'react';
 import styles from './homepage.module.css';
 import { TfiMenuAlt } from 'react-icons/tfi';
 import {IoIosArrowDown} from 'react-icons/Io';
+import {AiFillLinkedin} from 'react-icons/Ai';
 import { Biografia } from '../components/Biografia';
 import { Cards } from '../components/Cards';
+import { Contacto } from '../components/Contacto';
 
 export function HomePage() {
   
@@ -20,13 +22,11 @@ export function HomePage() {
     
     const handleVerMasOpen = () => {
       isVerMasOpen(!setIsVerMasOpen)
-    } */
+    } */    
     const toggleMenu2 = () => {
       setIsMenu2Open(!isMenu2Open)
     }
 
-    
-    
     const toggleInputIdioma = () => {
       setIsInputIdiomaOpen(!isInputIdiomasOpen)
     }
@@ -80,7 +80,13 @@ export function HomePage() {
     <section className={styles.nav3}>
         <div className={styles.nav3Left}>
         <p className={styles.articulo}>Articulo</p>
-        <p className={styles.discusion}>Discusion</p>
+        <span className={styles.discusion}>
+        <a className={styles.anclaDiscusion}
+        href="https://www.linkedin.com/feed/update/urn:li:activity:7079520332952272896/"
+        target="_blank"
+        rel="noopener noreferrer">Discusion en <AiFillLinkedin className={styles.logoLink}/></a>
+        </span>
+        
         </div>
         {/* AGREGAR articulo + discucsion + rigth herramientas */}
 
@@ -91,30 +97,11 @@ export function HomePage() {
       </section>
 
       <Biografia id='inicio'/>
+      <div id='proyectosHome' className={styles.proyectos}>
+        <p className={styles.proyectosText}> Proyectos : </p>
+      </div>
       <Cards/>
-{/* 
-      <section id='etimologia' className={styles.etimologia}>
-        texto 2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum, ut quasi voluptatum veritatis nisi odit explicabo repudiandae debitis alias, nihil iste maxime? Vero repellat accusantium veniam consequuntur commodi perferendis!
-      </section>
-
-      <section id='historia' className={styles.historia}>
-        texto 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus inventore quasi facere qui sequi exercitationem commodi similique ea veniam cumque, nihil voluptas. Reiciendis recusandae harum ipsa. Magni dicta iusto sed.
-      </section>
-
-      <section id='curriculumVitae' className={styles.extra}>
-          texto 4Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eaque, quisquam sequi ullam esse fugiat repudiandae enim! Aperiam assumenda asperiores voluptatum molestias in cum eligendi quibusdam, fugit ad? Modi, velit?
-      </section>
-
-      <section id='referencias' className={styles.referencias}>
-        Texto 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laboriosam dolorum facilis perferendis odit architecto delectus? Minus unde aliquid sunt hic ullam fugit velit pariatur recusandae, enim, quia provident corporis!
-      </section>
-
-      <section id='extras' className={styles.extras}>
-        Texto 6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laboriosam dolorum facilis perferendis odit architecto delectus? Minus unde aliquid sunt hic ullam fugit velit pariatur recusandae, enim, quia provident corporis!
-      </section> */}
-
-    
-    {/* </div> */}
+      <Contacto id='contacto'/>
     </>
   )
 }

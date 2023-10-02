@@ -1,198 +1,101 @@
-.contenedorCards {
-  width: 375px;
-  height:fit-content;
-  display: flex;
-  flex-direction: column;
-}
-.cardArriba {
-  width: 375px;
-  height:fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-/*   justify-content: space-between;
-  flex-direction: row; */
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  background-color: var(--background);
-  
-  position: relative;
-}
-.card1 {
-  width:auto;
-  height: 262px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius:6px ;
-  align-items: center;
-  background-color: var(--bordeoscuro);
-  border: 3px solid var(--grisclaro);/* 
-  filter: drop-shadow(9px 9px 0px #3b3b3b); */
-  margin-bottom: 35px;
-}
-.card2 {
-  width:auto;
-  height: 262px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 6px;
-  align-items: center;
-  background-color: var(--bordeoscuro);
-  border: 3px solid var(--grisclaro);
-  margin-bottom: 35px;
-}
-.card2:hover {
-  filter: none;
-}
-.img {
-  width: 210px;
-  height: 210px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  filter: none;
-}
-.imgCard1 {
-  width: 200px;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 14px 14px 0px 0px;
-
-}
-.imgCard2 {
-  width: 200px;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 14px 14px 0px 0px;
-}
-.descripcionCard {
-  width: auto;
-  height: 40px;
-  display: flex;
-  justify-items: center;
-  background-color: var(--prueba2);
-}
-.titleCard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--letras2);
+.sectionCards {
   width: 100%;
-  height: 14px;
-  margin: 0;
-  font-size: 0.5em;
-  background-color: var(--background);
-  font-family: 'Lisu Bosa', serif;
-  }
-.textCard {
-  width: 200px;
-  height: 20px;
-  margin: 0;
-  border-radius: 0px 0px 14px 14px;
-  color: var(--blanco);
-  font-weight: 700;
-  background-color: var(--borde);
-  font-size:0.5em;
-  font-family: 'Lisu Bosa', serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: fit-content;
+  margin: 30px 0 30px 0;
 }
-.ContenedorLink {
-  width: 80px;
-  height: 100px;
-  display: flex;
+.containerCards {
+  width: 100%;
+  height: fit-content;
+  display: grid;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 0;
-  top: 70px;
+  gap: 30px;
 }
-.Link {
-  width: 50px;
-  height: 50px;
+.card {
+  width: 250px;
+  height: 366px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border: 1px solid var(--letras2);
+  border-radius: 20px;
+  background-color: var(--card)
 }
-.deploy {
-  width: auto;
+.card:hover {
+  box-shadow: 0px 0px 16px 5px var(--cardsombra);
+}
+.containerImage {
+  width: 230px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 0 0;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px 14px 0px 0px;
+  border: 2px solid var(--cardborde);
+}
+.description {
+  width: 100%;
   height: auto;
-  font-size: 15px;
-  color: var(--link);
-} 
-.linkDeploy {
-  width: 30pxpx;
-  height: 20px;
-  font-size: 15px;
-  color: var(--link);
-}
-.card3 {
-  width:auto;
-  height: 262px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius:6px ;
-  align-items: center;
-  background-color: var(--bordeoscuro);
-  border: 3px solid var(--grisclaro);
-  filter: drop-shadow(9px 9px 0px #3b3b3b);
-  margin-bottom: 35px;
-}
-.cardAbajo {
-  width: 375px;
-  height:fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  background-color: var(--background);
+  margin: 10px 0 10px 0;
+  border-top: 1px solid var(--cardborde);
 }
-.card4 {
-  width:auto;
-  height: 262px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius:6px ;
-  align-items: center;
-  background-color: var(--bordeoscuro);
-  border: 3px solid var(--grisclaro);
-  filter: drop-shadow(9px 9px 0px #3b3b3b);
-  margin-bottom: 35px;
+.title {
+  font-size: 18px;
+  font-family: 'Lisu Bosa', serif;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  color: var(--letras2);
 }
-.card5 {
-  width:auto;
-  height: 262px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius:6px ;
-  align-items: center;
-  background-color: var(--bordeoscuro);
-  border: 3px solid var(--grisclaro);
-  filter: drop-shadow(9px 9px 0px #3b3b3b);
-  margin-bottom: 35px;
+.textCard {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  width: 80%;
 }
-.card6 {
-  width:auto;
-  height: 262px;
+.link {
+  width: 50px;
+  height: 55px;
+  position: absolute;
+  right: calc(50% - 75%);
+  border-radius: 50%;
+  background-color: var(--backgroundTitulo);
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  border-radius:6px ;
   align-items: center;
-  background-color: var(--bordeoscuro);
-  border: 3px solid var(--grisclaro);
-  filter: drop-shadow(9px 9px 0px #3b3b3b);
-  margin-bottom: 35px;
+}
+.url {
+  color:var(--cardborde);
+}
+.url:hover {
+  font-size: 20px;
+  color: var(--background2);
+}
+@media (min-width: 768px) {
+  .containerCards {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (min-width: 1024px) {
+  .containerCards {
+    grid-template-columns: repeat(3, auto);
+    gap: 80px;
+  }
+}
+@media (min-width: 1440px) {
+  .containerCards {
+    grid-template-columns: repeat(4, auto);
+    gap: 80px;
+  }
 }

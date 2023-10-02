@@ -6,7 +6,7 @@ import {BsToggleOn} from 'react-icons/Bs';
 import {IoIosArrowDown} from 'react-icons/Io'
 
 export function Switch({ onThemeChange }) {
-  const [theme, setTheme] = useState('dark');/* volver a modo light */
+  const [theme, setTheme] = useState('light');/* volver a modo light */
   const [isOnVisible, setIsOnVisible] = useState(true);
   const [isArrowRotated, setIsArrowRotated] = useState(false);
 
@@ -38,7 +38,7 @@ export function Switch({ onThemeChange }) {
           onClick={handleArrowClick}
         />
       </div>
-    </div>
+      </div>
     </>
   );
 }

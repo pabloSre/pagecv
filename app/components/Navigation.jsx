@@ -7,17 +7,19 @@ import { SlOptionsVertical } from 'react-icons/sl'
 import { Logos } from './logos';
 import styles from './navigation.module.css';
 import { Switch } from '../components/Switch';
-/* 
+import {MdOutlineDarkMode} from 'react-icons/Md';
+import {BsSun} from 'react-icons/Bs'
+
 import Link from 'next/link';
 
-const links = [{
+const links = [{/* contact(que te lleve al pie de la pagina) y notificar un error(wsp) */
   label: 'Inicio',
   route: '/'
 }, {
   label: 'Proyectos',
   route: '/proyectos' // Corregí el nombre de la ruta si es necesario
 }]
- */
+
 
 export function Navigation() {
   //abrir menu hamburguesa
@@ -71,11 +73,11 @@ export function Navigation() {
                   </li>
                 ))} */}
                 <li className={styles.navbar1}>
-                  <a className={styles.textnav} href="/">Contact</a>
-                  </li>
-                <li className={styles.navbar1}>
-                  <a className={styles.textnav} href="/">Notificar un error</a>
-                  </li>
+                <a href="/#contact">Contact</a>
+              </li>
+              <li className={styles.navbar1}>
+                <a href="/#notify-error">Notificar un error</a>
+              </li>
               </ul>
             </section>
          {/*  )} */}
@@ -83,10 +85,15 @@ export function Navigation() {
 
         <Logos theme={theme} />
 
-        <div className={styles.changeSwitch}>
-        <Switch onThemeChange={handleThemeChange} />
+        <div className={styles.changeSwitch}>{/* no tiene clase activada */}
+          <Switch onThemeChange={handleThemeChange} />
+          
+            
         </div>
-        
+        <section className={styles.containerCambio}>  
+          <MdOutlineDarkMode className={`${theme === 'light' ? styles.luna : styles.lunaOff}`} />
+          <BsSun className={`${theme === 'dark' ? styles.sol : styles.solOff}`} />
+        </section>
       </section>
       
       <section className={`${styles.navbarRigth} ${isSearchOpen ? styles.navbarRigthOpen : ''}`}>
@@ -109,5 +116,6 @@ export function Navigation() {
         </div>
       </section>
     </header>
+    
   );
 }

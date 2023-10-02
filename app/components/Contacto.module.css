@@ -1,0 +1,115 @@
+.contenedor {
+  width: 375px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background2);
+  border-radius: 12px;
+  border: 2px solid var(--azul1);
+}
+.card {
+  width: 375px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contenedorImg {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgContact {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  object-fit: cover;
+  border-radius: 60px;
+  border: 1px solid var(--borde);
+  filter: drop-shadow(8px 8px 4px #1990ff);
+}
+.redes {
+  width: 240px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.redesIcon {
+  width: 200px;
+}
+.imgText {
+  font-size: 15px;
+  border-bottom: 1px solid var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blanco);
+  margin: 0;
+  font-family: 'Lisu Bosa', serif;
+}
+.icons {
+  width: 200px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.iconCard1 {
+  font-size: 20px;
+  color: var(--background);
+  border: 1px solid var(--background);
+  border-radius: 4px;
+}
+.iconCard2 {
+  font-size: 20px;
+  color: var(--azul1);
+  border: 1px solid var(--azul1);
+  border-radius: 4px;
+}
+.iconCard3 {
+  font-size: 20px;
+  color: var(--rojo);
+  border: 1px solid var(--rojo);
+  border-radius: 4px;
+}
+.textRedes {
+  font-size: 15px;
+  font-family: 'Lisu Bosa', serif;
+  color: var(--letras);
+  margin:0;
+  margin-top: 10px;
+}
+.iconCard1:hover,
+.iconCard2:hover,
+.iconCard3:hover {
+  animation: animacion 0.8s;
+}
+
+@keyframes animacion {
+  0%,
+  100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+  }
+  15% {
+        transform: translateX(-10px) rotate(-6deg);
+  }
+  30% {
+        transform: translateX(10px) rotate(6deg);
+  }
+  45% {
+        transform: translateX(-10px) rotate(-3.6deg);
+  }
+  60% {
+        transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+  }
+}

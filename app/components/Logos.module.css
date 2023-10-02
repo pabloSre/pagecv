@@ -23,7 +23,7 @@
 .containerIcon{
   display: flex;
   align-items: center;
-  justify-content:start;
+  justify-content:flex-start;
   width: fit-content;/* no hace nada */
   height:fit-content;
   
