@@ -13,11 +13,11 @@ import {BsSun} from 'react-icons/Bs'
 import Link from 'next/link';
 
 const links = [{/* contact(que te lleve al pie de la pagina) y notificar un error(wsp) */
-  label: 'Inicio',
-  route: '/'
+  label: 'Contact',
+  route: '/#contacto'
 }, {
-  label: 'Proyectos',
-  route: '/proyectos' // Corregí el nombre de la ruta si es necesario
+  label: 'Notificar un error',
+  route: '/Notificar' // Corregí el nombre de la ruta si es necesario
 }]
 
 
@@ -32,6 +32,13 @@ export function Navigation() {
     
     console.log('temahome', newTheme);
   };
+
+  const handleReportError = () => {
+    // Utiliza el enlace mailto para abrir el cliente de correo por defecto del usuario
+    // con tu dirección de correo electrónico prellenada.
+    window.location.href = 'mailto:tucorreo@gmail.com?subject=Error en el sitio web&body=Descripción del error:';
+  };
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   }
@@ -65,18 +72,23 @@ export function Navigation() {
           {/* {isMenuOpen && ( */}
             <section className={`${styles.menuNav} ${isMenuOpen ? styles.menuNavActive : ''}`}>
               <ul className={`${styles.navbar} ${isMenuOpen ? styles.navbarActive : ''}`}>
-              {/*  {links.map(({ label, route }) => (
-                  <li key={label} className={styles.navbar1}>
-                    <Link href={route} className={styles.textnav}>
-                      {label}
-                    </Link>
-                  </li>
-                ))} */}
+              
+              {/* {links.map(({ label, route }) => (
+              <li key={label} className={styles.navbar1}>
+              <Link href={route} className={styles.textnav}>
+              {label}
+              </Link>
+              </li>
+              ))}
+                 */}
+                
                 <li className={styles.navbar1}>
                 <a href="/#contact">Contact</a>
               </li>
               <li className={styles.navbar1}>
-                <a href="/#notify-error">Notificar un error</a>
+                <a href="/#notificar-error"></a>
+              
+                <button onClick={handleReportError}>Notificar un error</button>
               </li>
               </ul>
             </section>
