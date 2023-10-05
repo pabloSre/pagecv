@@ -9,7 +9,7 @@ export function Contacto() {
 
   return(
   <>
-  <section className={styles.contenedor}>
+  <section className={styles.contenedor} id='contacto'>
     <div className={styles.card}>
       <div className={styles.contenedorImg}>
         <img src="pablo33.jpeg" alt="imagen card" className={styles.imgContact} />

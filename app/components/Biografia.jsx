@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from './Biografia.module.css';
 import {SiPlatzi} from 'react-icons/Si';
+import { CardVideo } from '../components/CardVideo';
 
 
 export function Biografia() {
@@ -22,7 +23,7 @@ export function Biografia() {
        {/*  <p className={styles.inicio3}> */}
       Sin lugar a dudas, una de las características que me define es mi enfoque dedicado y mi persistencia incansable en la resolución de desafíos. Cuando me enfrento a obstáculos en el camino, veo oportunidades de crecimiento y aprendizaje. Cada problema se convierte en una posibilidad para explorar nuevas estrategias y enfoques, y esto ha sido fundamental para mi éxito en la creación de aplicaciones fluidas y eficientes que superan mis expectativas.
 
-      No se trata solo de escribir líneas de código para mí; se trata de comprender las necesidades y los objetivos detrás de cada proyecto. Mi compromiso con la entrega de soluciones a medida ha dejado un nuevo conocimiento.
+      No se trata solo de escribir líneas de código para mí, se trata de comprender las necesidades y los objetivos detrás de cada proyecto. Mi compromiso con la entrega de soluciones a medida ha dejado un nuevo conocimiento.
       
       Mi compromiso con la mejora continua es evidente en la forma en que abordo cada proyecto. Siempre estoy dispuesto a explorar nuevas herramientas, marcos de trabajo y metodologías, buscando siempre la manera de optimizar el proceso de desarrollo y ofrecer resultados aún más impactantes. 
       
@@ -32,7 +33,8 @@ export function Biografia() {
      {/*  </p> */}
       {/* </details> */}
       </section>
-
+        
+        <div className={styles.cardsBio}>
       <section className={styles.inicio2}>
         <div className={styles.rectangulo}>
           <div className={styles.rec1}>
@@ -75,10 +77,15 @@ export function Biografia() {
               
 
           </div>
+          
         </div>
         
       </section>
+      <CardVideo/>
       </div>
+      </div>
+      
+
       </section>
 
   </>

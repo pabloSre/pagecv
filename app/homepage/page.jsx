@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './homepage.module.css';
 import { TfiMenuAlt } from 'react-icons/tfi';
 import {IoIosArrowDown} from 'react-icons/Io';
@@ -97,11 +97,14 @@ export function HomePage() {
       </section>
 
       <Biografia id='inicio'/>
-      <div id='proyectosHome' className={styles.proyectos}>
-        <p className={styles.proyectosText}> Proyectos : </p>
+      <div id='proyectos' className={styles.proyectos}>
+        <p className={styles.proyectosText}>Proyectos</p>
       </div>
       <Cards/>
-      <Contacto id='contacto'/>
+      <div className={styles.proyectos}>
+        <p className={styles.proyectosText}>Contacto</p>
+      </div>
+      <Contacto/>
     </>
   )
 }

@@ -10,17 +10,6 @@ import { Switch } from '../components/Switch';
 import {MdOutlineDarkMode} from 'react-icons/Md';
 import {BsSun} from 'react-icons/Bs'
 
-import Link from 'next/link';
-
-const links = [{/* contact(que te lleve al pie de la pagina) y notificar un error(wsp) */
-  label: 'Contact',
-  route: '/#contacto'
-}, {
-  label: 'Notificar un error',
-  route: '/Notificar' // Corregí el nombre de la ruta si es necesario
-}]
-
-
 export function Navigation() {
   //abrir menu hamburguesa
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -72,23 +61,12 @@ export function Navigation() {
           {/* {isMenuOpen && ( */}
             <section className={`${styles.menuNav} ${isMenuOpen ? styles.menuNavActive : ''}`}>
               <ul className={`${styles.navbar} ${isMenuOpen ? styles.navbarActive : ''}`}>
-              
-              {/* {links.map(({ label, route }) => (
-              <li key={label} className={styles.navbar1}>
-              <Link href={route} className={styles.textnav}>
-              {label}
-              </Link>
-              </li>
-              ))}
-                 */}
-                
+
                 <li className={styles.navbar1}>
-                <a href="/#contact">Contact</a>
+                <a href="/#contacto">Contacto</a>
               </li>
               <li className={styles.navbar1}>
-                <a href="/#notificar-error"></a>
-              
-                <button onClick={handleReportError}>Notificar un error</button>
+                <a href="mailto:pvdev.web@gmail.com?subject=Notificar%20un%20error&body=He%20encontrado%20un%20error">Notificar un error</a>
               </li>
               </ul>
             </section>

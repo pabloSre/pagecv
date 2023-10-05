@@ -24,6 +24,7 @@
     --card:rgba(163, 194, 255, 0.671);
     --cardborde:#646b5e6e; 
     --cardsombra:#23272f;
+    --background-card: #1c2332;
   }
   [data-theme='dark'] {
     --background:#23272f;
@@ -49,6 +50,7 @@
     --card:rgba(89, 153, 153, 0.856);
     --cardborde:black;
     --cardsombra: rgba(162,162,162,0.75);
+    --background-card: #4a4f5899;
 }
   * {
     box-sizing: border-box;
@@ -66,6 +68,9 @@
     align-items:flex-start;
     height: 100vh;
     background-color: var(--background);
+  }
+  html{
+    scroll-behavior: smooth;
   }
 
   /* @media (min-width:1000px) {

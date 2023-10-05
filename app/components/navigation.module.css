@@ -245,7 +245,7 @@
 /* responsive */
 @media(min-width: 450px) {
   .searchOpen{
-    width: 155px;
+    width: 115px;
   }
   .navbarLeft {
     width:2350px;
@@ -258,7 +258,16 @@
   }
 }
 
-
+@media(min-width: 470px) {
+  .searchOpen {
+    width: 130px;
+  }
+}
+@media(min-width: 550px) {
+  .searchOpen {
+    width: 160px;
+  }
+}
 @media(min-width: 600px) {
   .searchOpen {
     width: 100%;
