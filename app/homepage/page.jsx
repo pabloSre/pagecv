@@ -80,9 +80,10 @@ export function HomePage() {
       <section className={styles.inputIdiomas}
                 onClick={toggleInputIdioma}>
       <label className={styles.idiomas}>
-          <Image src="https://es.wikipedia.org/w/load.php?modules=skins.vector.icons&image=language&variant=progressive&format=original&skin=vector-2022&version=1vw3w" 
+          <Image src="/lenguaje.svg" 
           className={styles.iconLeng}
-          alt="idiomas" />
+          alt="idiomas"
+          width={17} height={22} />
         <p className={styles.cantidadIdiomas}>Cambiar idioma</p>
         <IoIosArrowDown className={styles.arrow}/>
       </label>
@@ -105,7 +106,6 @@ export function HomePage() {
         </span>
         
         </div>
-        {/* AGREGAR articulo + discucsion + rigth herramientas */}
 
         <div className={styles.nav3Rigth}>
             <p className={styles.herramientas}>Herramientas</p>

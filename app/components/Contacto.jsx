@@ -1,4 +1,4 @@
-'use cliente'
+'use client'
 import React from 'react';
 import styles from './Contacto.module.css';
 import {FaGithubSquare} from 'react-icons/fa';
@@ -13,7 +13,7 @@ export function Contacto() {
   <section className={styles.contenedor} id='contacto'>
     <div className={styles.card}>
       <div className={styles.contenedorImage}>
-        <Image src="pablo33.jpeg" alt="imagen card" className={styles.ImageContact} />
+        <Image src="/pablo33.jpeg" alt="imagen card" className={styles.ImageContact} width={100} height={100}/>
       </div>
       <section className={styles.redes}>
         <div className={styles.redesIcon}>

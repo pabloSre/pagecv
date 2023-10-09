@@ -10,7 +10,7 @@ export function CardVideo() {
     <section className={styles.inicioV}>
       <div className={styles.rectanguloV}>
         <div className={styles.video1}>
-          <Image src='/videocard.png'  className={styles.imagenV} alt="video youtube" />
+          <Image src='/videocard.png'  className={styles.imagenV} alt="video youtube" width={210} height={109}/>
         </div>
         <p  className={styles.textVideo}>
           También produzco música electrónica solamente con mis equipos analógicos. Mira el contenido de youtube.

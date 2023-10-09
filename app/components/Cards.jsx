@@ -11,31 +11,31 @@ export function Cards() {
     {
       titulo: 'Generador de perfiles',
       descripcion: 'Genera perfiles consumiendo de una api',
-      imagen: 'generadorPerfiles.png',
+      imagen: '/generadorPerfiles.png',
       url: 'https://stalwart-gnome-b94e4a.netlify.app/'
     },
     {
       titulo: 'Tienda',
       descripcion: 'Tienda ficticia para crear compras, consumiendo una api',
-      imagen: 'portafolio2tienda.png',
+      imagen: '/portafolio2tienda.png',
       url: 'https://tushopvite.netlify.app/'
     },
     {
       titulo: 'Tareas pendientes',
       descripcion: 'Aplicación creada con React. Podés agregar, editar y eliminar tareas. ',
-      imagen: 'workpending3.png',
+      imagen: '/workpending3.png',
       url: 'https://pablosre.github.io/Work-pending/'
     },
     {
       titulo: 'Login de usuarios',
       descripcion: 'Creada para realizar el login y registro de usuarios',
-      imagen: 'login1.jpg',
+      imagen: '/login1.jpg',
       url: 'https://app-login-b.vercel.app/'
     },
     {
       titulo: 'Detek',
       descripcion: 'Página web creada para empresa de productos electronicos',
-      imagen: 'detek2.png',
+      imagen: '/detek2.png',
       url: 'https://detek.com.ar/'
     },
     
@@ -48,7 +48,7 @@ export function Cards() {
   {proyectos.map((proyecto, index) => (
     <div key={index} className={styles.card}>
       <figure className={styles.containerImage}>
-        <Image className={styles.image} src={proyecto.imagen} alt={proyecto.titulo} />
+        <Image className={styles.image} src={proyecto.imagen} alt={proyecto.titulo} width={100} height={100} quality={100}/>
       </figure>
 
       <div className={styles.description}>

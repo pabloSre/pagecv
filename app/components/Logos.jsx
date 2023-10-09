@@ -9,11 +9,11 @@ export function Logos({ theme }) {
   
   return (
     <div className={styles.containerIcon}>
-      <Image src='/wiki.png' alt='mundowiki' className={styles.logo} />
+      <Image src='/wiki.png' alt='mundowiki' className={styles.logo} width={50} height={45} />
 
       <div className={styles.textWiki}>
-        <Image src={wikipediaLogoSrc} alt='wiki' className={styles.logo2} />
-        <Image src={enciclopediaLogoSrc} alt='laenciclopedia' className={styles.logo3} />
+        <Image src={wikipediaLogoSrc} alt='wiki' className={styles.logo2} width={120}  height={18}/>
+        <Image src={enciclopediaLogoSrc} alt='laenciclopedia' className={styles.logo3} width={100} height={17} />
       </div>
     </div>
   );
