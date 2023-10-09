@@ -5,7 +5,7 @@ import styles from './Logos.module.css';
 export function Logos({ theme }) {
   const wikipediaLogoSrc = theme === 'dark' ? '/wikipediadark.svg' : '/wikipedia.svg';
   const enciclopediaLogoSrc = theme === 'dark' ? '/laenciclopediadark.svg' : '/laenciclopedia.svg';
-  console.log('temaLogos: ' , theme);
+  
   return (
     <div className={styles.containerIcon}>
       <img src='/wiki.png' alt='mundowiki' className={styles.logo} />

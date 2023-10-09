@@ -14,7 +14,6 @@ export function Switch({ onThemeChange }) {
   const handleChange = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-    console.log('temaSwitch:', newTheme);
     onThemeChange(newTheme);
     setIsOnVisible(!isOnVisible);
   }
