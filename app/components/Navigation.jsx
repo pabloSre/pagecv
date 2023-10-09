@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
 import { IoSearchSharp } from 'react-icons/io5';
 import { SlOptionsVertical } from 'react-icons/sl'
-import { Logos } from './logos';
+import { Logos } from './Logos';
 import styles from './navigation.module.css';
 import { Switch } from './Switch';
 import {MdOutlineDarkMode} from 'react-icons/md';
