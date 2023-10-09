@@ -2,7 +2,7 @@
 
 import React from "react"
 import styles from './CardVideo.module.css';
-
+import {GrYoutube} from 'react-icons/Gr'
 export function CardVideo() {
   return (
     <>
@@ -11,7 +11,13 @@ export function CardVideo() {
         <div className={styles.video1}>
           <img src='/videocard.png'  className={styles.imagenV} alt="video youtube" />
         </div>
+        <p  className={styles.textVideo}>
+          También produzco música electrónica solamente con mis equipos analógicos. Mira el contenido de youtube.
+        </p>
       </div>
+      <div className={styles.linkYt}>
+          <a className={styles.linkYoutube}href='https://www.youtube.com/watch?v=wc8iFfIsSSU&ab_channel=PabloRec'>Link a  <GrYoutube className={styles.logoYoutube}/></a>
+        </div>
     </section>
     </>
 )}

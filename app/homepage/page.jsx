@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './homepage.module.css';
 import { TfiMenuAlt } from 'react-icons/tfi';
 import {IoIosArrowDown} from 'react-icons/Io';
@@ -29,7 +29,25 @@ export function HomePage() {
 
     const toggleInputIdioma = () => {
       setIsInputIdiomaOpen(!isInputIdiomasOpen)
-    }
+    } 
+
+    useEffect(() => {
+      const handleOutsideClick = (event) => {
+        if (
+          !event.target.closest('.menuHome2') &&
+          !event.target.closest('.listIdiomas')
+        ) {
+            setIsMenu2Open(false);
+            setIsInputIdiomaOpen(false);
+          } 
+      };
+      document.addEventListener('click', handleOutsideClick);
+      
+      return () => {/* limpia el evento de click cuando se cierra */
+        document.removeEventListener('click', handleOutsideClick);
+      };
+    }, [isInputIdiomasOpen, isMenu2Open]);
+  
   return (
     <>
     {/* <div className={styles.paddingHome}> */}
@@ -50,8 +68,6 @@ export function HomePage() {
               Inicio</a>
             <a className={styles.zonas}href="#proyectos">
               Proyectos</a>
-            <a className={styles.zonas}href="#curriculum">
-              Curriculum</a>
             <a className={styles.zonas}href="#extras">
               Extras</a>
           </li> 

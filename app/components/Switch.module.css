@@ -24,14 +24,16 @@
   border: none;
   flex-direction: column;
   height: 25px;
-  position: relative;
+  position: fixed;
   justify-content: center;
   align-items: center;
   width: auto;
   height: auto;
   border: 2px solid transparent; /* Borde transparente oculto */
   cursor: pointer;
-  
+  z-index: 10;
+  background-color: var(--backgroundSwitch);
+  border-radius: 0 0 10px 10px;
 }
 
 .on {
@@ -51,7 +53,7 @@
 }
 .arrowTheme {
   font-size:21px ;
-  color: var(--azul1);
+  color: var(--azul2);
 }
 
 .rotate {

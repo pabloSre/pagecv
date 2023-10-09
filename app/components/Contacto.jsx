@@ -18,9 +18,15 @@ export function Contacto() {
         <div className={styles.redesIcon}>
         <p className={styles.imgText}>Pablo Re Full Stack Developer</p>
           <div className={styles.icons}>
+          <a href='https://github.com/pabloSre'>
             <FaGithubSquare className={styles.iconCard1}/>
+            </a>
+          <a href='https://www.linkedin.com/in/pablo-re/'>
             <AiFillLinkedin className={styles.iconCard2}/>
+            </a>
+          <a href="mailto:pvdev.web@gmail.com?subject=Contact"> 
             <BiLogoGmail className={styles.iconCard3}/>
+            </a>
           </div>
         </div>
         <p className={styles.textRedes}>

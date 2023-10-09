@@ -81,6 +81,7 @@ export function Biografia() {
         </div>
         
       </section>
+      <h2 className={styles.extrasTitle} id='extras'>Extras</h2>
       <CardVideo/>
       </div>
       </div>

@@ -17,19 +17,19 @@ export function Cards() {
       titulo: 'Tienda',
       descripcion: 'Tienda ficticia para crear compras, consumiendo una api',
       imagen: 'portafolio2tienda.png',
-      url: 'https://stalwart-gnome-b94e4a.netlify.app/'
+      url: 'https://tushopvite.netlify.app/'
     },
     {
       titulo: 'Tareas pendientes',
       descripcion: 'Aplicación creada con React. Podés agregar, editar y eliminar tareas. ',
       imagen: 'workpending3.png',
-      url: 'https://stalwart-gnome-b94e4a.netlify.app/'
+      url: 'https://pablosre.github.io/Work-pending/'
     },
     {
       titulo: 'Login de usuarios',
       descripcion: 'Creada para realizar el login y registro de usuarios',
       imagen: 'login1.jpg',
-      url: 'https://stalwart-gnome-b94e4a.netlify.app/'
+      url: 'https://app-login-b.vercel.app/'
     },
     {
       titulo: 'Detek',

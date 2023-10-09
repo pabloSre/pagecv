@@ -16,16 +16,10 @@ export function Navigation() {
   //abrir search
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [theme, setTheme] = useState('light');
+  const searchContainerRef = useRef(null);
+
   const handleThemeChange = (newTheme) => {
     setTheme(newTheme);
-    
-    console.log('temahome', newTheme);
-  };
-
-  const handleReportError = () => {
-    // Utiliza el enlace mailto para abrir el cliente de correo por defecto del usuario
-    // con tu dirección de correo electrónico prellenada.
-    window.location.href = 'mailto:tucorreo@gmail.com?subject=Error en el sitio web&body=Descripción del error:';
   };
 
   const toggleMenu = () => {
@@ -36,19 +30,26 @@ export function Navigation() {
     setIsSearchOpen(!isSearchOpen);
   }
   
-  const searchContainerRef = useRef(null);
+  
+
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (isSearchOpen && searchContainerRef.current && !searchContainerRef.current.contains(event.target)) {
-        setIsSearchOpen(false);
-      }
+      if (
+        !event.target.closest('.navbarActive') &&
+        !event.target.closest('.cajaSearchOpen') &&
+        !searchContainerRef.current.contains(event.target)
+      ) {
+        if (isMenuOpen || isSearchOpen) {
+          setIsMenuOpen(false);
+          setIsSearchOpen(false);
+        }
+      } 
     };
-
     document.addEventListener('click', handleOutsideClick);
     return () => {
       document.removeEventListener('click', handleOutsideClick);
     };
-  }, [isSearchOpen]);
+  }, [isSearchOpen, isMenuOpen]);
 
 
   return (

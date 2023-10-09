@@ -30,7 +30,7 @@
   object-fit: cover;
   border-radius: 60px;
   border: 1px solid var(--borde);
-  filter: drop-shadow(8px 8px 4px #1990ff);
+  filter: drop-shadow(8px 8px 4px var(--bordeImagen));
 }
 .redes {
   width: 85%;

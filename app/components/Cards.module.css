@@ -55,13 +55,13 @@
   font-family: 'Lisu Bosa', serif;
   text-align: center;
   margin: 10px 0 10px 0;
-  color: var(--letras2);
+  color: var(--tituloCard);
 }
 .textCard {
   margin: 0;
   text-align: center;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: lighter;
   width: 80%;
 }
 .link {
@@ -103,6 +103,7 @@
   }
   .textCard {
     font-size: 16px;
+
   }
 }
 @media (min-width: 1440px) {
