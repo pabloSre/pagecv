@@ -10,7 +10,7 @@ import { Switch } from './Switch';
 import {MdOutlineDarkMode} from 'react-icons/md';
 import {BsSun} from 'react-icons/bs';
 
-export function Navigation() {
+export default function Navigation() {
   //abrir menu hamburguesa
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   //abrir search
