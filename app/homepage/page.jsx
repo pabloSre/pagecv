@@ -8,6 +8,7 @@ import {AiFillLinkedin} from 'react-icons/ai';
 import { Biografia } from '../components/Biografia';
 import { Cards } from '../components/Cards';
 import { Contacto } from '../components/Contacto';
+import Image from 'next/image';
 
 export function HomePage() {
   
@@ -79,7 +80,7 @@ export function HomePage() {
       <section className={styles.inputIdiomas}
                 onClick={toggleInputIdioma}>
       <label className={styles.idiomas}>
-          <img src="https://es.wikipedia.org/w/load.php?modules=skins.vector.icons&image=language&variant=progressive&format=original&skin=vector-2022&version=1vw3w" 
+          <Image src="https://es.wikipedia.org/w/load.php?modules=skins.vector.icons&image=language&variant=progressive&format=original&skin=vector-2022&version=1vw3w" 
           className={styles.iconLeng}
           alt="idiomas" />
         <p className={styles.cantidadIdiomas}>Cambiar idioma</p>

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Biografia.module.css';
 import {SiPlatzi} from 'react-icons/si';
 import { CardVideo } from '../components/CardVideo';
-
+import Image from 'next/image';
 
 export function Biografia() {
   return (
@@ -40,7 +40,7 @@ export function Biografia() {
           <div className={styles.rec1}>
           <p className={styles.titleRec}>Pablo Re</p>
           </div>
-          <img src='/pablorefullstack2.jpg' alt="fotocv" className={styles.imagen1} />
+          <Image src='/pablorefullstack2.jpg' alt="fotocv" className={styles.imagen1} />
           
           <div className={styles.info}>
               

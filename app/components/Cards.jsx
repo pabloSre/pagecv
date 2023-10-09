@@ -3,6 +3,7 @@
 import React from 'react';
 import {LuExternalLink} from 'react-icons/lu'
 import styles from './Cards.module.css';
+import Image from 'next/image';
 
 export function Cards() {
 
@@ -47,7 +48,7 @@ export function Cards() {
   {proyectos.map((proyecto, index) => (
     <div key={index} className={styles.card}>
       <figure className={styles.containerImage}>
-        <img className={styles.image} src={proyecto.imagen} alt={proyecto.titulo} />
+        <Image className={styles.image} src={proyecto.imagen} alt={proyecto.titulo} />
       </figure>
 
       <div className={styles.description}>

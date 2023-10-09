@@ -4,6 +4,7 @@ import styles from './Contacto.module.css';
 import {FaGithubSquare} from 'react-icons/fa';
 import {AiFillLinkedin} from 'react-icons/ai';
 import {BiLogoGmail} from 'react-icons/bi';
+import Image from 'next/image';
 
 export function Contacto() {
 
@@ -11,12 +12,12 @@ export function Contacto() {
   <>
   <section className={styles.contenedor} id='contacto'>
     <div className={styles.card}>
-      <div className={styles.contenedorImg}>
-        <img src="pablo33.jpeg" alt="imagen card" className={styles.imgContact} />
+      <div className={styles.contenedorImage}>
+        <Image src="pablo33.jpeg" alt="imagen card" className={styles.ImageContact} />
       </div>
       <section className={styles.redes}>
         <div className={styles.redesIcon}>
-        <p className={styles.imgText}>Pablo Re Full Stack Developer</p>
+        <p className={styles.ImageText}>Pablo Re Full Stack Developer</p>
           <div className={styles.icons}>
           <a href='https://github.com/pabloSre'>
             <FaGithubSquare className={styles.iconCard1}/>

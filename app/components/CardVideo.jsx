@@ -1,15 +1,16 @@
 'use client'
 
-import React from "react"
+import React from "react";
 import styles from './CardVideo.module.css';
-import {GrYoutube} from 'react-icons/gr'
+import {GrYoutube} from 'react-icons/gr';
+import Image from 'next/image';
 export function CardVideo() {
   return (
     <>
     <section className={styles.inicioV}>
       <div className={styles.rectanguloV}>
         <div className={styles.video1}>
-          <img src='/videocard.png'  className={styles.imagenV} alt="video youtube" />
+          <Image src='/videocard.png'  className={styles.imagenV} alt="video youtube" />
         </div>
         <p  className={styles.textVideo}>
           También produzco música electrónica solamente con mis equipos analógicos. Mira el contenido de youtube.

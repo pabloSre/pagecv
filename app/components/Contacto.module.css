@@ -17,7 +17,7 @@
   border-radius: 12px;
   border: 2px solid var(--azul1);
 }
-.contenedorImg {
+.contenedorImage {
   width: 115px;
   height: 115px;
   display: flex;
@@ -25,7 +25,7 @@
   align-items: center;
   margin-left: 10px;
 }
-.imgContact {
+.ImageContact {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -48,7 +48,7 @@
   justify-content: center;
   flex-direction: column;
 }
-.imgText {
+.ImageText {
   font-size: 15px;
   display: flex;
   justify-content: center;
@@ -132,12 +132,12 @@
   }
 }
 @media (min-width: 450px) {
-  .imgText {
+  .ImageText {
     font-size: 17px;
   }
 }
 @media (min-width: 600px) {
-  .imgText {
+  .ImageText {
     font-size: 20px;
   }
   .card {
@@ -149,7 +149,7 @@
   .redesIcon {
     width: 77%;
   }
-  .imgText {
+  .ImageText {
     font-size: 22px;
   }
   .iconCard1,
@@ -165,7 +165,7 @@
   .redesIcon {
     width: 77%;
   }/* 
-  .imgText {
+  .ImageText {
     font-size: 17px;
   } */
   .iconCard1,
@@ -184,7 +184,7 @@
   .redesIcon {
       width: 60%;
   }/* 
-  .imgText {
+  .ImageText {
     font-size: 18px;
   } */
   .iconCard1,

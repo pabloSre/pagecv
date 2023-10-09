@@ -6,9 +6,9 @@ import { IoSearchSharp } from 'react-icons/io5';
 import { SlOptionsVertical } from 'react-icons/sl'
 import { Logos } from './logos';
 import styles from './navigation.module.css';
-import { Switch } from '../components/Switch';
+import { Switch } from './Switch';
 import {MdOutlineDarkMode} from 'react-icons/md';
-import {BsSun} from 'react-icons/bs'
+import {BsSun} from 'react-icons/bs';
 
 export function Navigation() {
   //abrir menu hamburguesa
@@ -30,8 +30,6 @@ export function Navigation() {
     setIsSearchOpen(!isSearchOpen);
   }
   
-  
-
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (
