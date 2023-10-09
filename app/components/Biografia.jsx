@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import styles from './Biografia.module.css';
-import {SiPlatzi} from 'react-icons/Si';
+import {SiPlatzi} from 'react-icons/si';
 import { CardVideo } from '../components/CardVideo';
 
 

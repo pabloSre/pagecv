@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from './homepage.module.css';
 import { TfiMenuAlt } from 'react-icons/tfi';
-import {IoIosArrowDown} from 'react-icons/Io';
-import {AiFillLinkedin} from 'react-icons/Ai';
+import {IoIosArrowDown} from 'react-icons/io';
+import {AiFillLinkedin} from 'react-icons/ai';
 import { Biografia } from '../components/Biografia';
 import { Cards } from '../components/Cards';
 import { Contacto } from '../components/Contacto';

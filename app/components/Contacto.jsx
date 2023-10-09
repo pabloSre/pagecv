@@ -1,9 +1,9 @@
 'use cliente'
 import React from 'react';
 import styles from './Contacto.module.css';
-import {FaGithubSquare} from 'react-icons/Fa';
-import {AiFillLinkedin} from 'react-icons/Ai';
-import {BiLogoGmail} from 'react-icons/Bi';
+import {FaGithubSquare} from 'react-icons/fa';
+import {AiFillLinkedin} from 'react-icons/ai';
+import {BiLogoGmail} from 'react-icons/bi';
 
 export function Contacto() {
 

@@ -1,9 +1,9 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './Switch.module.css';
-import {BsToggleOff} from 'react-icons/Bs';
-import {BsToggleOn} from 'react-icons/Bs';
-import {IoIosArrowDown} from 'react-icons/Io'
+import {BsToggleOff} from 'react-icons/bs';
+import {BsToggleOn} from 'react-icons/bs';
+import {IoIosArrowDown} from 'react-icons/io'
 
 export function Switch({ onThemeChange }) {
   const [theme, setTheme] = useState('light');/* volver a modo light */

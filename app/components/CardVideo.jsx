@@ -2,7 +2,7 @@
 
 import React from "react"
 import styles from './CardVideo.module.css';
-import {GrYoutube} from 'react-icons/Gr'
+import {GrYoutube} from 'react-icons/gr'
 export function CardVideo() {
   return (
     <>

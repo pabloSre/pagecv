@@ -2,13 +2,13 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
-import { IoSearchSharp } from 'react-icons/Io5';
+import { IoSearchSharp } from 'react-icons/io5';
 import { SlOptionsVertical } from 'react-icons/sl'
 import { Logos } from './logos';
 import styles from './navigation.module.css';
 import { Switch } from '../components/Switch';
-import {MdOutlineDarkMode} from 'react-icons/Md';
-import {BsSun} from 'react-icons/Bs'
+import {MdOutlineDarkMode} from 'react-icons/md';
+import {BsSun} from 'react-icons/bs'
 
 export function Navigation() {
   //abrir menu hamburguesa

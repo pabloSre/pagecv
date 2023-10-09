@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import {LuExternalLink} from 'react-icons/Lu'
+import {LuExternalLink} from 'react-icons/lu'
 import styles from './Cards.module.css';
 
 export function Cards() {
