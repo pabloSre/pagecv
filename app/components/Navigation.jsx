@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { TfiMenu } from 'react-icons/tfi';
-import { BsSearch } from 'react-icons/Bs';
+import { IoSearchSharp } from 'react-icons/Io5';
 import { SlOptionsVertical } from 'react-icons/sl'
 import { Logos } from './logos';
 import styles from './navigation.module.css';
@@ -94,7 +94,7 @@ export function Navigation() {
               placeholder='Buscar en wikipedia'
             />
           )}
-          <BsSearch className={styles.SearchIcon} onClick={toggleSearch} />
+          <IoSearchSharp className={styles.SearchIcon} onClick={toggleSearch} />
         </label>
 
         <div className={`${styles.navUser1} ${isSearchOpen ? styles.navUser0 : ''}`}>

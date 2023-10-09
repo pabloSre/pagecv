@@ -60,7 +60,7 @@
 .textCard {
   margin: 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   width: 80%;
 }
@@ -87,16 +87,27 @@
     grid-template-columns: repeat(2, auto);
     gap: 75px
   }
+  
+  .textCard {
+    font-size: 13px;
+  }
 }
 @media (min-width: 1024px) {
   .containerCards {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
     gap: 80px;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  .textCard {
+    font-size: 16px;
   }
 }
 @media (min-width: 1440px) {
   .containerCards {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
     gap: 80px;
   }
 }

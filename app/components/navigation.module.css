@@ -87,7 +87,10 @@
   height: 77px;
   opacity: 1;
 } 
-
+.navbarActive a {
+  text-decoration: none;
+  
+}
 .navbar1 {
   display: flex;
   align-items: flex-start;

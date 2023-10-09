@@ -130,16 +130,26 @@
     background-position: 0% 50%;
   }
 }
-
-@media (min-width: 768px) {
-  .card {
-    width: 50%;
+@media (min-width: 450px) {
+  .imgText {
+    font-size: 17px;
   }
+}
+@media (min-width: 600px) {
+  .imgText {
+    font-size: 20px;
+  }
+  .card {
+    width: 482px;
+  }
+}
+@media (min-width: 768px) {
+  
   .redesIcon {
-    width: 70%;
+    width: 77%;
   }
   .imgText {
-    font-size: 16px;
+    font-size: 22px;
   }
   .iconCard1,
   .iconCard2,
@@ -149,38 +159,37 @@
 }
 @media (min-width: 1024px) {
   .card {
-    width: 40%;
+    width: 582px;
   }
   .redesIcon {
-    width: 70%;
-  }
+    width: 77%;
+  }/* 
   .imgText {
     font-size: 17px;
-  }
+  } */
   .iconCard1,
   .iconCard2,
   .iconCard3 {
-    font-size: 25px;
+    font-size: 29px;
+  }
+  .textRedes {
+    font-size: 17px;
   }
 }
 @media (min-width: 1440px) {
   .card {
-    width: 35%;
     height: 150px;
   }
   .redesIcon {
       width: 60%;
-  }
+  }/* 
   .imgText {
     font-size: 18px;
-  }
+  } */
   .iconCard1,
   .iconCard2,
   .iconCard3 {
-    font-size: 26px;
-}
-.textRedes {
-  font-size: 20px;
+    font-size: 31px;
 }
 
 }
