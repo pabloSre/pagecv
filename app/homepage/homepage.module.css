@@ -285,6 +285,7 @@
   }
   .proyectosText {
     left: 8%;
+    right: 8%;
   }
   
 }
@@ -320,6 +321,8 @@
 }
 .proyectosText {
   left: 12%;
+  right: 12%;
+
 }
 
 }
@@ -334,6 +337,8 @@
 }
 .proyectosText {
   left: 13%;
+  right: 13%;
+
 }
 
 }
@@ -359,6 +364,8 @@
 }
 .proyectosText {
   left: 15%;
+  right: 15%;
+
 }
 
 }
@@ -373,6 +380,8 @@
   }
   .proyectosText {
     left: 16%;
+    right: 16%;
+
   }
 }
 @media (min-width:1500px) {
@@ -386,6 +395,8 @@
   }
   .proyectosText {
     left: 17%;
+    right: 17%;
+
   }
 }
 @media (min-width:1800px) {
@@ -399,5 +410,7 @@
   }
   .proyectosText {
     left: 19%;
+    right: 19%;
+
   }
 }

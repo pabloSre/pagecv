@@ -48,7 +48,7 @@ export default function Cards() {
   {proyectos.map((proyecto, index) => (
     <div key={index} className={styles.card}>
       <figure className={styles.containerImage}>
-        <Image className={styles.image} src={proyecto.imagen} alt={proyecto.titulo} width={100} height={100} quality={100}/>
+        <Image className={styles.image} src={proyecto.imagen} alt={proyecto.titulo} width={1200} height={800} quality={100} layout='fixed'/>
       </figure>
 
       <div className={styles.description}>

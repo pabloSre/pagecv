@@ -243,6 +243,7 @@
 .options {
   transform: rotate(90deg);
   width: fit-content;
+  color: var(--background2);
 }
 
 /* responsive */

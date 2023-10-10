@@ -100,7 +100,7 @@ export default function HomePage() {
         <p className={styles.articulo}>Articulo</p>
         <span className={styles.discusion}>
         <a className={styles.anclaDiscusion}
-        href="https://www.linkedin.com/feed/update/urn:li:activity:7079520332952272896/"
+        href="https://www.linkedin.com/feed/update/urn:li:activity:7117505510731321344/"
         target="_blank"
         rel="noopener noreferrer">Discusion en <AiFillLinkedin className={styles.logoLink}/></a>
         </span>

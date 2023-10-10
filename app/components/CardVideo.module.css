@@ -1,9 +1,11 @@
 .inicioV {
   display: none;
-  background: linear-gradient(230deg, #da3cf8, #4662ed, #46bbed, #8946ed);
-  background-size: 800% 800%;
+  background: linear-gradient(254deg, #4c8eea, #40ffce, #f16dff, #7537b0, #31c6df, #ee4bd9, #2e32e1);
+  background-size: 1400% 1400%;
+  -webkit-animation: animationBackground 20s ease infinite;
+  animation: animationBackground 20s ease infinite;
   position: relative;
-  }
+}
 .inicioV:hover {
   animation: flash 1s linear;
 }
@@ -36,16 +38,15 @@
   display: none;
 }
 
-@keyframes animacionBackground {
-  0% {
-    background-position: 61% 0%
-  }
-  50% {
-    background-position: 40% 100%
-  }
-  100% {
-    background-position: 61% 0%
-  }
+@-webkit-keyframes animationBackground {
+  0%{background-position:0% 94%}
+  50%{background-position:100% 7%}
+  100%{background-position:0% 94%}
+}
+@keyframes animationBackground {
+  0%{background-position:0% 94%}
+  50%{background-position:100% 7%}
+  100%{background-position:0% 94%}
 }
 
 @media (min-width:470px) {
