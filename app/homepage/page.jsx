@@ -5,12 +5,12 @@ import styles from './homepage.module.css';
 import { TfiMenuAlt } from 'react-icons/tfi';
 import {IoIosArrowDown} from 'react-icons/io';
 import {AiFillLinkedin} from 'react-icons/ai';
-import { Biografia } from '../components/Biografia';
-import { Cards } from '../components/Cards';
-import { Contacto } from '../components/Contacto';
+import  Biografia  from '../components/Biografia';
+import Cards from '../components/Cards';
+import Contacto from '../components/Contacto';
 import Image from 'next/image';
 
-export function HomePage() {
+export default function HomePage() {
   
   /* EXPORT DEFAULT HACE QUE NO TENGAS QUE EXPORTARLO AL FINAL DEL PROYECTO */
     //abrir menu hamburguesa

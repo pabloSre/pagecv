@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Logos.module.css';
 import Image from 'next/image';
 
-export function Logos({ theme }) {
+export default function Logos({ theme }) {
   const wikipediaLogoSrc = theme === 'dark' ? '/wikipediadark.svg' : '/wikipedia.svg';
   const enciclopediaLogoSrc = theme === 'dark' ? '/laenciclopediadark.svg' : '/laenciclopedia.svg';
   

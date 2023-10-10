@@ -6,7 +6,7 @@ import {AiFillLinkedin} from 'react-icons/ai';
 import {BiLogoGmail} from 'react-icons/bi';
 import Image from 'next/image';
 
-export function Contacto() {
+export default function Contacto() {
 
   return(
   <>

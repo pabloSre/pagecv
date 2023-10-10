@@ -2,10 +2,10 @@
 import React from 'react';
 import styles from './Biografia.module.css';
 import {SiPlatzi} from 'react-icons/si';
-import { CardVideo } from '../components/CardVideo';
+import CardVideo from '../components/CardVideo';
 import Image from 'next/image';
 
-export function Biografia() {
+export default function Biografia() {
   return (
   <>
 <section className={styles.biografia}>

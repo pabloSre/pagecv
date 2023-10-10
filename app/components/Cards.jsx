@@ -5,7 +5,7 @@ import {LuExternalLink} from 'react-icons/lu'
 import styles from './Cards.module.css';
 import Image from 'next/image';
 
-export function Cards() {
+export default function Cards() {
 
   const proyectos = [
     {

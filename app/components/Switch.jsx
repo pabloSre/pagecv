@@ -5,7 +5,7 @@ import {BsToggleOff} from 'react-icons/bs';
 import {BsToggleOn} from 'react-icons/bs';
 import {IoIosArrowDown} from 'react-icons/io'
 
-export function Switch({ onThemeChange }) {
+export default function Switch({ onThemeChange }) {
   const [theme, setTheme] = useState('light');/* volver a modo light */
   const [isOnVisible, setIsOnVisible] = useState(true);
   const [isArrowRotated, setIsArrowRotated] = useState(false);

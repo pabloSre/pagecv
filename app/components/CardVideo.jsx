@@ -4,7 +4,7 @@ import React from "react";
 import styles from './CardVideo.module.css';
 import {GrYoutube} from 'react-icons/gr';
 import Image from 'next/image';
-export function CardVideo() {
+export default function CardVideo() {
   return (
     <>
     <section className={styles.inicioV}>
