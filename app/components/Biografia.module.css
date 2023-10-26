@@ -7,21 +7,24 @@
   padding:20px 30px 0px 30px;
   margin-bottom: 50px;
   background-color:var(--background);
-  /* poner padding left y rigth en general
-  para poder central al medio todo. */
+}
+.em1 {
+  font-weight: bold;
 }
 .inicio {
   width: 100%;
   height: fit-content;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   background-color: var(--background);
 }
 .inicio1 {
   color: var(--letras2);
-  width: 380px;
+  width: auto;
+  margin-bottom: 30px;
   height: fit-content;
+  padding-right: 7px;
   font-size: 11px;
   font-family: 'DM Sans', sans-serif;
   background-color: var(--background);
@@ -30,27 +33,12 @@
 .inicio3 {
   font-size: 10px;
 }
-.inicio2 {
-  display:none;
-}
-.extrasTitle {
-  display: none;
-  font-weight: 300;
-  border-bottom: 1px solid var(--bordeclaro);
-  margin-top: 100px;
-  color: var(--letras2);
-  font-size: 22px;
-  font-family: 'Lisu Bosa', serif;
-}
-@media (min-width:470px) {
-.inicio1 {
-  padding-right: 7px;
-}
-/* inicio 2 */
 .cardsBio {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+
+  align-items: center;
 }
 .inicio2 {
   display:flex;
@@ -61,6 +49,17 @@
   justify-content: center;
   align-items:stretch ;/* donde empieza el borde. */
   
+}
+.extrasTitle {
+  display: flex;
+  font-weight: 300;
+  border-bottom: 1px solid var(--bordeclaro);
+  margin-top: 50px;
+  color: var(--letras2);
+  font-size: 22px;
+  font-family: 'Lisu Bosa', serif;
+  width: 100%;
+  padding: 0 0 10px 0;
 }
 .rectangulo {
   display: flex;
@@ -103,7 +102,7 @@
   justify-content: flex-start;
   align-items: center;
   font-size: 8px;
-  }
+}
 .infoPersonal {
   display: flex;
   justify-content: center;
@@ -122,8 +121,7 @@
   margin: 0;
   margin-top: 3px; 
   padding: 0;
-}
-.subTitle {
+}.subTitle {
   height: 15px;
   width: 79px;
   font-weight: bold;
@@ -185,8 +183,14 @@
   color: greenyellow;
   font-size: 10px;
 }
+
+@media (min-width:450px) {
+
+.inicio1 {
+  font-size: 12px;
+}
 .extrasTitle {
-  display: flex;
+  margin-top: 100px;
 }
 }
 @media (min-width:515px) {
@@ -198,7 +202,11 @@
   }
   }
 @media (min-width:600px) {
+  .inicio {
+    flex-direction: row;
+  }
   .inicio1 {
+    width: 400px;
     font-size: 14px;
   }/* 
   .subTitle2 {

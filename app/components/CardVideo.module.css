@@ -1,5 +1,12 @@
 .inicioV {
-  display: none;
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  width: 230px;
+  height: fit-content;
+  border: 1px solid var(--blanco);
+  background-color:var(--bordeclaro);
   background: linear-gradient(254deg, #4c8eea, #40ffce, #f16dff, #7537b0, #31c6df, #ee4bd9, #2e32e1);
   background-size: 1400% 1400%;
   -webkit-animation: animationBackground 20s ease infinite;
@@ -9,71 +16,25 @@
 .inicioV:hover {
   animation: flash 1s linear;
 }
-.inicioV2{
-  display: none;
-}
-.rectanguloV {
-  display: none;
-  animation: animacionBackground 5s ease infinite;
-}
-.rectanguloV:hover {
-  filter: blur(1px); 
-}
-.video1 {
-  display: none;
-}
-.imagenV {
-  display:none;
-}
-.linkYt {
-  display: none;
-}
-.linkYoutube {
-  display: none;
-}
-.logoYoutube {
-  display: none;
-}
-.textVideo {
-  display: none;
-}
-
-@-webkit-keyframes animationBackground {
-  0%{background-position:0% 94%}
-  50%{background-position:100% 7%}
-  100%{background-position:0% 94%}
-}
-@keyframes animationBackground {
-  0%{background-position:0% 94%}
-  50%{background-position:100% 7%}
-  100%{background-position:0% 94%}
-}
-
-@media (min-width:470px) {
-.inicioV {
-  display:flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 10px;
-  width: 230px;
-  height: fit-content;
-  border: 1px solid var(--blanco);
-  background-color:var(--bordeclaro);
-}
 .inicioV:hover .linkYt {
   opacity: 1; /* Cambia la opacidad a 1 en hover */
-}
-.rectanguloV {
-  display: flex;
-  flex-direction: column;
-  width: 230px;
-  height: fit-content;
 }
 .video1 {
   display: flex;
   width: 210px;
   height: 124px;
 }
+.rectanguloV {
+  animation: animacionBackground 5s ease infinite;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: fit-content;
+}
+.rectanguloV:hover {
+  filter: blur(1px); 
+}
+
 .imagenV {
   display: flex;
   width: 210px;
@@ -115,7 +76,17 @@
   font-size: 11px;
   margin: 0;
 }
+@-webkit-keyframes animationBackground {
+  0%{background-position:0% 94%}
+  50%{background-position:100% 7%}
+  100%{background-position:0% 94%}
 }
+@keyframes animationBackground {
+  0%{background-position:0% 94%}
+  50%{background-position:100% 7%}
+  100%{background-position:0% 94%}
+}
+
 @keyframes flash {
   0% {
     opacity: 0;

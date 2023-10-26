@@ -45,7 +45,7 @@ export default function Cards() {
     <>
     <section className={styles.sectionCards}>
     <div className={styles.containerCards}>
-  {proyectos.map((proyecto, index) => (
+  {proyectos.map((proyecto, index) => (/* "proyecto" puede ser cualquier palabra, index arranca desde el array 0 */
     <div key={index} className={styles.card}>
       <figure className={styles.containerImage}>
         <Image className={styles.image} src={proyecto.imagen} alt={proyecto.titulo} width={1200} height={800} quality={100} layout='fixed'/>

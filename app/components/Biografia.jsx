@@ -12,20 +12,25 @@ export default function Biografia() {
 
       <div className={styles.inicio}>
       
-      <section id='inicio' className={styles.inicio1}>
-      Desarrollador Full Stack con experiencia en Javascript especializado en Node.Js. 
-
-      Desde mis primeros días en el universo del desarrollo, he demostrado una gran curiosidad y  pasión por mantenerme a la vanguardia de las últimas tendencias en tecnología. Mi capacidad para asimilar rápidamente nuevos conceptos y adaptarme a los cambios en el panorama tecnológico me ha permitido ofrecer soluciones que se adapten a las necesidades para cumplir con los objetivos.
-
-      Sin lugar a dudas, una de las características que me define es mi enfoque dedicado y mi persistencia incansable en la resolución de desafíos. Cuando me enfrento a obstáculos en el camino, veo oportunidades de crecimiento y aprendizaje. Cada problema se convierte en una posibilidad para explorar nuevas estrategias y enfoques, y esto ha sido fundamental para mi éxito en la creación de aplicaciones fluidas y eficientes que superan mis expectativas.
-
-      No se trata solo de escribir líneas de código para mí, se trata de comprender las necesidades y los objetivos detrás de cada proyecto. Mi compromiso con la entrega de soluciones a medida ha dejado un nuevo conocimiento.
+      <section id='inicio' className={styles.inicio1}>{/* etiqueta em pone cursiva , y strong pone bold */}
       
-      Mi compromiso con la mejora continua es evidente en la forma en que abordo cada proyecto. Siempre estoy dispuesto a explorar nuevas herramientas, marcos de trabajo y metodologías, buscando siempre la manera de optimizar el proceso de desarrollo y ofrecer resultados aún más impactantes. 
+      <strong className={styles.em1}>Desarrollador Full Stack</strong> con experiencia en <a href='https://developer.mozilla.org/es/docs/Web/JavaScript' className={styles.em1}>Javascript</a> especializado en <a href='https://nodejs.org/en/about' className={styles.em1}>Node.Js</a>.<br />
       
-      En mi proyecto más ambicioso hasta la fecha, he decidido presentarme de una manera única y creativa. Inspirado por la estructura de Wikipedia, he desarrollado una página web clon que no solo funciona como mi portafolio personal, sino que también refleja mi pasión por la programación y la tecnología. A través de esta plataforma, comparto no solo mi experiencia y logros, sino también mis metas futuras y mi visión para contribuir aún más al mundo del desarrollo web.
       
-      Mi viaje en el mundo del desarrollo web sigue evolucionando, y estoy seguro de que dejaré una huella duradera en la industria y en la comunidad tecnológica en general.
+      Desde mis primeros días en el universo del desarrollo, me mantengo actualizado con las últimas tendencias en tecnología. Mi capacidad para asimilar rápidamente nuevos conceptos y adaptarme a los cambios en el panorama tecnológico me ha permitido ofrecer soluciones que se adapten a las necesidades para cumplir con los objetivos. <br />
+      
+      Comence a estudiar en la academia <a className={styles.em1} href="https://platzi.com/">Platzi</a> y me especialicé en la ruta de <a className={styles.em1} href="https://es.react.dev/">React.js</a><br />
+
+      Mi enfoque dedicado y persistencia me ayuda a la resolución de desafíos. Cuando me enfrento a obstáculos en el camino, veo oportunidades de crecimiento y aprendizaje. Cada problema es una posibilidad para explorar nuevas estrategias y enfoques, y esto ha sido fundamental para mi éxito en la creación de aplicaciones fluidas y eficientes que superan mis expectativas. <br />
+
+      No se trata solo de escribir líneas de código para mí, se trata de comprender las necesidades y los objetivos detrás de cada proyecto.
+      <br />
+      Mi compromiso con la mejora continua se pone en evidencia en la forma en que abordo cada nuevo proyecto. Siempre estoy dispuesto a explorar nuevas herramientas, marcos de trabajo y metodologías, buscando la manera de optimizar el proceso de desarrollo y ofrecer resultados aún más impactantes. 
+      <br />
+      En mi proyecto más ambicioso hasta la fecha, he decidido presentarme de una manera única y creativa. Inspirado por la estructura de <a href="https://es.wikipedia.org/wiki/Halloween" className={styles.em1}>Wikipedia</a>, he desarrollado una página web clon que no solo funciona como mi portafolio personal, sino que también refleja mi pasión por la programación y la tecnología. A través de esta plataforma, comparto mi experiencia y logros, mis metas futuras y mi visión para contribuir aún más al mundo del desarrollo web.
+      <br />
+      <br />
+      Estoy en constante evolucion en el desarrollo, siento que dejaré una huella duradera en la industria y en la comunidad tecnológica.
 
       </section>
         
